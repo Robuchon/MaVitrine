@@ -4,32 +4,26 @@
     <div class="flex items-center">
       <InputsTarget
       class=" w-80"
-      :target="'InputSelect'"
       :data="selectInput"
       :error="''"
-      v-model="selectInput.value"
+      v-model="testData.target"
     ></InputsTarget>
     <InputsTarget
       class=" w-40"
-      :target="'InputSwitch'"
       :data="switchInput"
       :error="''"
       v-model="switchInput.value"
     ></InputsTarget>
     </div>
-    
     <div class="flex items-center">
       <InputsTarget
       class=" w-80"
-      :target="selectInput.value"
       :data="testData"
       :error="switchInput.value ? testError : ''"
       v-model="testData.value"
     ></InputsTarget>
-
     <p>value {{ testData.value }}</p>
     </div>
-    
   </div>
 </template>
 
@@ -41,6 +35,7 @@ const selectInput = ref({
   label: "Voir un input",
   name: "input",
   type: "select",
+  target: "InputSelect",
   value: "",
   options: [
     { slot: "Faite un choix", value: "" },
@@ -54,6 +49,7 @@ const switchInput = ref({
   label: "Voir l'erreur",
   name: "switch",
   type: "switch",
+  target: "InputSwitch",
   value: true,
 });
 
@@ -62,6 +58,7 @@ const testData = ref({
   name: "exemple",
   type: "select",
   placeholder: "Exemple",
+  target: "",
   value: "",
   options: [
     { slot: "Faite un choix", value: "" },

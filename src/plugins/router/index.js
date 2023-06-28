@@ -21,6 +21,11 @@ let routes = [
     component: () => import("@pages/Input.vue"),
   },
   {
+    path: "/button",
+    name: "Button",
+    component: () => import("@pages/Button.vue"),
+  },
+  {
     path: "/waiting",
     name: "Waiting",
     component: () => import("@pages/Waiting.vue"),

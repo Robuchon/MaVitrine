@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
+@layer components {
+    h1 {
+        @apply text-Primary text-4xl font-semibold
+    }
+    h2 {
+        @apply text-Primary text-3xl font-semibold
+    }
+    h3 {
+        @apply text-Primary text-2xl font-semibold
+    }
+    h4 {
+        @apply text-Primary text-xl font-semibold
+    }
+    h5 {
+        @apply text-Primary text-base font-semibold
+    }
+    h6 {
+        @apply text-Primary text-sm font-semibold
+    }
+    p {
+        @apply text-Primary text-base font-normal
+    }
+    a {
+        @apply text-Primary text-base font-normal underline hover:decoration-double underline-offset-2
+    }
+}
 @tailwind utilities;
