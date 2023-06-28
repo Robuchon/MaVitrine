@@ -11,6 +11,11 @@ let routes = [
     component: () => import("@pages/Home.vue"),
   },
   {
+    path: "/techno",
+    name: "Techno",
+    component: () => import("@pages/Techno.vue"),
+  },
+  {
     path: "/contact",
     name: "Contact",
     component: () => import("@pages/Contact.vue"),
