@@ -87,11 +87,11 @@
       </div>
     </div>
     <NavbarTarget
-      class="z-10"
+      class="z-20"
       :target="selectInput.value"
       :navigation="navigation"
     ></NavbarTarget>
-    <RouterView class="z-10 mx-auto"></RouterView>
+    <RouterView class="mx-auto px-2 z-10"></RouterView>
     <Footer class="z-10"></Footer>
   </div>
 </template>
@@ -103,8 +103,14 @@ import { ref } from "vue";
 const navigation = ref([
   { name: "Moi", goto: "/home" },
   { name: "Techno", goto: "/techno" },
-  { name: "Input", goto: "/input" },
-  { name: "Button", goto: "/button" },
+  {
+    name: "Demo",
+    dataNav: [
+      { name: "Input", goto: "/input" },
+      { name: "Button", goto: "/button" },
+    ],
+  },
+
   { name: "Contact", goto: "/Contact" },
 ]);
 

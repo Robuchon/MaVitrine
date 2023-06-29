@@ -1,12 +1,12 @@
 <template>
   <Disclosure as="nav" class="z-30" v-slot="{ open }">
     <div
-      class="px-8 pt-4 md:px-8 md:pt-10 lg:px-24 xl:mx-auto xl:w-[1200px] xl:px-0"
+      class="px-8 pt-4 md:px-8 md:pt-10 lg:px-24 xl:mx-auto  xl:w-[1200px] xl:px-0"
     >
-      <div class="flex flex-1 items-center justify-between">
+      <div class="flexitems-center justify-between">
         <PopoverGroup
           as="nav"
-          class="mx-auto flex justify-center space-x-2 lg:space-x-8 xl:basis-1/2"
+          class="mx-auto flex flex-wrap  justify-center space-x-2 lg:space-x-8 xl:basis-1/2"
         >
           <div v-for="item in navigation">
             <div v-if="item.dataNav === undefined" class="flex w-24">
@@ -36,7 +36,7 @@
                       : 'text-Primary hover:text-Neutral'
                   "
                 >
-                  Services
+                  {{ item.name }}
                 </p>
               </PopoverButton>
               <transition
@@ -49,7 +49,8 @@
               >
                 <PopoverPanel
                   v-if="opendropdown"
-                  class="absolute z-20 mt-10 -ml-2"
+                  class="absolute z-20 mt-10 -ml-5"
+                  :class="opendropdown"
                   static
                 >
                   <DropDown
