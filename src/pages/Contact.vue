@@ -54,7 +54,7 @@
               <label
                 for="first-name"
                 class="block text-sm font-semibold leading-6 text-Primary"
-                >First name</label
+                >Prénom</label
               >
               <div class="mt-2.5">
                 <input
@@ -71,7 +71,7 @@
               <label
                 for="last-name"
                 class="block text-sm font-semibold leading-6 text-Primary"
-                >Last name</label
+                >Nom</label
               >
               <div class="mt-2.5">
                 <input
@@ -105,7 +105,7 @@
               <label
                 for="phone-number"
                 class="block text-sm font-semibold leading-6 text-Primary"
-                >Phone number</label
+                >Télephone</label
               >
               <div class="mt-2.5">
                 <input

@@ -70,10 +70,10 @@
         spécialisées, je ne pourrais jamais réussir ou être pris au sérieux dans
         ce domaine. Heureusement, en 2020, j'ai eu la chance de rencontrer des
         personnes évoluant dans le milieu informatique qui m'ont encouragé. Je
-        me suis alors lancé dans l'apprentissage autonome du PHP, de l'HTML et
-        du CSS. À l'été 2021, j'ai publié mon premier site, qui n'est plus en
-        ligne aujourd'hui, car la personne pour qui je l'ai créé ne l'a jamais
-        utilisé. Vous pouvez trouver le lien du dépôt Git ici :
+        me suis alors lancé dans l'apprentissage autonome du PHP, de l'HTML, du
+        SQL et du CSS. À l'été 2021, j'ai publié mon premier site, qui n'est
+        plus en ligne aujourd'hui, car la personne pour qui je l'ai créé ne l'a
+        jamais utilisé. Vous pouvez trouver le lien du dépôt Git ici :
         <a href="https://github.com/Robuchon/Le-petit-salon" target="_blank"
           >Lien du dépôt Git.</a
         >
@@ -84,11 +84,13 @@
         tellement enthousiasmé que j'ai quitté mon emploi début 2022 pour
         devenir freelance. Depuis lors, j'ai travaillé sur différents projets,
         notamment la création d'un site vitrine et d'une application web pour
-        <a href="https://reave.gg"  target="_blank">REAVE (reave.gg)</a> et d'autres projets privés. J'ai également eu
-        l'occasion de mettre à l'épreuve mes compétences sur des projets
-        semi-personnels, tels que le site d'art de ma femme, réalisé en moins de
-        10 heures :
-        <a href="https://ladyacadia.fr/home" target="_blank">Site d'art de ma femme.</a>
+        <a href="https://reave.gg" target="_blank">REAVE (reave.gg)</a> et
+        d'autres projets privés. J'ai également eu l'occasion de mettre à
+        l'épreuve mes compétences sur des projets semi-personnels, tels que le
+        site d'art de ma femme, réalisé en moins de 10 heures :
+        <a href="https://ladyacadia.fr/home" target="_blank"
+          >Site d'art de ma femme.</a
+        >
       </p>
       <p>
         Et récemment, j'ai conçu un site vitrine pour l'entreprise de mon
