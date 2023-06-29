@@ -78,9 +78,83 @@
     </div>
     <div name="backend">
       <h3>BackEnd</h3>
+      <h4>NodeJS</h4>
+      <p>
+        J'ai pris la décision de ne pas utiliser de nombreuses bibliothèques
+        dans mon backend, et je ne sais pas si cela est une mauvaise chose ou
+        non, mais cela me convient. J'apprécie beaucoup l'utilisation du NoSQL,
+        et pour structurer mon code, j'adopte une approche basée sur les
+        middlewares et les contrôleurs. Je procède étape par étape pour aboutir
+        à un contrôleur logique. Au fur et à mesure de mon parcours, j'ai créé
+        mes propres validateurs afin de mieux comprendre les expressions
+        régulières (REGEX). J'ai également exploré différentes fonctionnalités,
+        telles que les websockets, qui m'ont ouvert de nouvelles perspectives.
+      </p>
+      <h4>Express</h4>
+      <p>
+        En ce qui concerne Express, il se peut que je n'aie pas approfondi tous
+        les aspects de cette bibliothèque. La frontière entre Express et NodeJS
+        peut parfois sembler floue, mais cela n'a pas d'importance pour moi
+        aujourd'hui. Ce qui compte, c'est que j'utilise Express comme un outil
+        essentiel pour le développement de mes applications, en bénéficiant de
+        sa simplicité et de sa flexibilité.
+      </p>
+      <h4>Mongoose</h4>
+      <p>
+        Après avoir exploré le SQL lors de ma formation personnelle avec une
+        gestion simple de quelques valeurs, je me suis plongé dans le monde du
+        noSQL. Mongoose est l'outil parfait qui me permet de réaliser mes idées
+        de manière extrêmement simple. Sa simplicité d'utilisation et sa
+        flexibilité sont des atouts majeurs. Dans la section dédiée aux bases de
+        données, je détaillerai davantage son utilisation et ses
+        fonctionnalités.
+      </p>
+      <h4>Les autres</h4>
+      <p>
+        J'ai adopté l'utilisation de différentes bibliothèques dans mon
+        développement, notamment jsonwebtoken et bcrypt pour la gestion des
+        accès et des tokens. J'utilise également des outils essentiels tels que
+        body-parser, cors, ainsi que d'autres bibliothèques comme sharp et
+        multer pour faciliter la gestion des fichiers. Ces bibliothèques sont
+        présentes dans mon code pour rendre possible la gestion et le
+        fonctionnement de manière plus simple et efficace.
+      </p>
     </div>
     <div name="bdStockage">
       <h3>Base de donnée et stockage</h3>
+      <h4>MongoDB</h4>
+      <p>
+        J'aime me lancer des défis de temps en temps, et MongoDB est le parfait
+        compagnon pour cela. J'ai voulu profiter des avantages des deux mondes,
+        et après des recherches approfondies et avec l'aide d'un contact dans le
+        domaine IT, j'ai mis en place un cluster Docker avec plusieurs shards.
+        Cela me permet également de bénéficier de la haute disponibilité, même
+        si ce n'est pas l'objectif principal ici, car tout est regroupé au même
+        endroit. De plus, je peux effectuer des transactions (sessions), ce qui
+        est vraiment pratique. J'ai également exploré les fonctionnalités
+        d'agrégation et bien d'autres. Aujourd'hui, je me sens à l'aise avec
+        MongoDB, même si je n'ai pas encore soumis mon niveau à un développeur
+        spécialisé en bases de données. Je me forme surtout pour moi-même, et je
+        ne compte pas m'arrêter là. Je n'aurai pas le choix si je veux réaliser
+        mon projet personnel secret ! Ma façon d'utiliser MongoDB est assez
+        simple en général : j'ai des collections qui sont propres à un contexte
+        spécifique, et je crée des liens entre ces collections en utilisant des
+        variables qui contiennent les identifiants MongoDB des autres
+        collections. J'utilise ensuite des méthodes de peuplement (populate)
+        pour faciliter la récupération des données. En résumé, j'apprécie
+        énormément cette logique de chaîne de production que MongoDB avec
+        Mongoose me permet de mettre en place.
+      </p>
+      <h4>Minio</h4>
+      <p>
+        À ce niveau-là, je n'ai pas grand-chose à dire, car je n'ai pas besoin
+        d'une grande capacité de stockage. J'ai mis en place une sauvegarde sur
+        un conteneur Docker où j'ai installé Minio. C'est similaire à la façon
+        dont je travaillerais avec un compte AWS d'Amazon ou un service de
+        stockage R2 de CloudFlare. Minio me permet d'avoir une petite gestion
+        des données et des droits, ainsi qu'une interface visuelle pour
+        consulter en temps réel les données enregistrées.
+      </p>
     </div>
   </div>
 </template>
