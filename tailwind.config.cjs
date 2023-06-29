@@ -5,9 +5,9 @@ module.exports = {
     extend: {
       colors: {
         Primary: "#f5f5f4",
-        Secondary: "#a78bfa",
-        Accent: "#4c1d95",
-        Neutral: "#67e8f9",
+        Secondary: "#9e8ad9",
+        Accent: "#4f248f",
+        Neutral: "#77d3df",
         Info: "#67e8f9",
         Success: "#4ade80",
         Warning: "#FFC700",
