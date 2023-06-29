@@ -78,6 +78,11 @@
           >Lien du dépôt Git.</a
         >
       </p>
+      <div class="flex">
+        <a href="https://github.com/Robuchon/Le-petit-salon" target="_blank" class="mx-auto">
+          <img src="/img/home/gitSalon.png" alt="" class="h-36" />
+        </a>
+      </div>
       <p>
         En septembre, j'ai décidé de me lancer dans la formation proposée par le
         Bocal Academy en tant que développeur web FullStack JS. Cela m'a
@@ -85,13 +90,27 @@
         devenir freelance. Depuis lors, j'ai travaillé sur différents projets,
         notamment la création d'un site vitrine et d'une application web pour
         <a href="https://reave.gg" target="_blank">REAVE (reave.gg)</a> et
-        d'autres projets privés. J'ai également eu l'occasion de mettre à
-        l'épreuve mes compétences sur des projets semi-personnels, tels que le
-        site d'art de ma femme, réalisé en moins de 10 heures :
+        d'autres projets privés.
+      </p>
+      <div class="flex">
+        <a href="https://reave.gg" target="_blank" class="mx-auto">
+          <img src="/img/home/reave.png" alt="" class="h-36" />
+        </a>
+      </div>
+      <p>
+        J'ai également eu l'occasion de mettre à l'épreuve mes compétences sur
+        des projets semi-personnels, tels que le site d'art de ma femme, réalisé
+        en moins de 10 heures :
         <a href="https://ladyacadia.fr/home" target="_blank"
           >Site d'art de ma femme.</a
         >
       </p>
+      <div class="flex">
+        <a href="https://ladyacadia.fr/home" target="_blank" class="mx-auto">
+          <img src="/img/home/maFemme.png" alt="" class="h-36" />
+        </a>
+      </div>
+
       <p>
         Et récemment, j'ai conçu un site vitrine pour l'entreprise de mon
         beau-père. J'ai réussi à le réaliser en moins de 48 heures, en y
@@ -100,6 +119,11 @@
           >Site vitrine de l'entreprise de mon beau-père."</a
         >
       </p>
+      <div class="flex">
+        <a href="https://9ca2847f.adp.pages.dev/home" target="_blank" class="mx-auto">
+          <img src="/img/home/beauPere.png" alt="" class="h-36" />
+        </a>
+      </div>
     </div>
   </div>
 </template>
