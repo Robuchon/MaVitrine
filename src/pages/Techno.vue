@@ -125,79 +125,140 @@
       <h3>BackEnd</h3>
       <h4>NodeJS</h4>
       <p>
-        J'ai pris la décision de ne pas utiliser de nombreuses bibliothèques
-        dans mon backend, et je ne sais pas si cela est une mauvaise chose ou
-        non, mais cela me convient. J'apprécie beaucoup l'utilisation du NoSQL,
-        et pour structurer mon code, j'adopte une approche basée sur les
-        middlewares et les contrôleurs. Je procède étape par étape pour aboutir
-        à un contrôleur logique. Au fur et à mesure de mon parcours, j'ai créé
-        mes propres validateurs afin de mieux comprendre les expressions
-        régulières (REGEX). J'ai également exploré différentes fonctionnalités,
-        telles que les websockets, qui m'ont ouvert de nouvelles perspectives.
+        J'ai pris la décision d'utiliser
+        <span class="text-Neutral">minimim de bibliothèques</span> dans mon
+        backend, et je ne sais pas si cela est une mauvaise chose ou non, mais
+        cela me convient. J'apprécie beaucoup l'utilisation du
+        <span class="text-Neutral">NoSQL</span>, et pour structurer mon code,
+        j'adopte une approche basée sur les
+        <span class="text-Neutral">middlewares</span> et les
+        <span class="text-Neutral">contrôleurs</span>. Je procède étape par
+        étape pour aboutir à un contrôleur logique. Au fur et à mesure de mon
+        parcours, j'ai créé
+        <span class="text-Neutral">mes propres validateurs</span> afin de mieux
+        comprendre les expressions régulières
+        <span class="text-Neutral">(REGEX)</span>. J'ai également exploré
+        différentes fonctionnalités, telles que les
+        <span class="text-Neutral">websockets</span>, qui m'ont ouvert de
+        nouvelles perspectives.
       </p>
       <h4>Express</h4>
       <p>
-        En ce qui concerne Express, il se peut que je n'aie pas approfondi tous
-        les aspects de cette bibliothèque. La frontière entre Express et NodeJS
-        peut parfois sembler floue, mais cela n'a pas d'importance pour moi
-        aujourd'hui. Ce qui compte, c'est que j'utilise Express comme un outil
-        essentiel pour le développement de mes applications, en bénéficiant de
-        sa simplicité et de sa flexibilité.
+        En ce qui concerne Express, il se peut que je n'aie
+        <span class="text-Neutral">pas approfondi</span> tous les
+        <span class="text-Neutral">aspects</span> de cette bibliothèque. La
+        <span class="text-Neutral">frontière</span> entre
+        <span class="text-Neutral">Express</span> et
+        <span class="text-Neutral">NodeJS</span> peut parfois sembler
+        <span class="text-Neutral">floue</span>, mais cela n'a pas d'importance
+        pour moi aujourd'hui. <span class="text-Neutral">Ce qui compte</span>,
+        c'est que j'utilise Express comme un
+        <span class="text-Neutral">outil essentiel</span> pour le développement
+        de mes applications, en bénéficiant de sa
+        <span class="text-Neutral">simplicité</span> et de sa
+        <span class="text-Neutral">flexibilité</span>.
       </p>
       <h4>Mongoose</h4>
       <p>
-        Après avoir exploré le SQL lors de ma formation personnelle avec une
-        gestion simple de quelques valeurs, je me suis plongé dans le monde du
-        noSQL. Mongoose est l'outil parfait qui me permet de réaliser mes idées
-        de manière extrêmement simple. Sa simplicité d'utilisation et sa
-        flexibilité sont des atouts majeurs. Dans la section dédiée aux bases de
-        données, je détaillerai davantage son utilisation et ses
-        fonctionnalités.
+        <span class="text-Neutral">Après</span> avoir exploré
+        <span class="text-Neutral">le SQL</span> lors de ma formation
+        personnelle avec une gestion simple de quelques valeurs, je me suis
+        plongé dans le monde du <span class="text-Neutral">noSQL</span>.
+        Mongoose est l'<span class="text-Neutral">outil parfait</span> qui me
+        permet de <span class="text-Neutral">réaliser</span> mes
+        <span class="text-Neutral">idées</span> de manière extrêmement simple.
+        Sa <span class="text-Neutral">simplicité</span> d'utilisation et sa
+        <span class="text-Neutral">flexibilité</span> sont des
+        <span class="text-Neutral">atouts majeurs</span>. Dans la section dédiée
+        aux bases de données, je
+        <span class="text-Neutral">détaillerai</span> davantage son
+        <span class="text-Neutral">utilisation</span> et ses
+        <span class="text-Neutral">fonctionnalités</span>.
       </p>
       <h4>Les autres</h4>
       <p>
-        J'ai adopté l'utilisation de différentes bibliothèques dans mon
-        développement, notamment jsonwebtoken et bcrypt pour la gestion des
-        accès et des tokens. J'utilise également des outils essentiels tels que
-        body-parser, cors, ainsi que d'autres bibliothèques comme sharp et
-        multer pour faciliter la gestion des fichiers. Ces bibliothèques sont
-        présentes dans mon code pour rendre possible la gestion et le
-        fonctionnement de manière plus simple et efficace.
+        J'ai adopté l'<span class="text-Neutral">utilisation</span> de
+        différentes bibliothèques dans mon
+        <span class="text-Neutral">développement</span>, notamment
+        <span class="text-Neutral">jsonwebtoken</span> et
+        <span class="text-Neutral">bcrypt</span> pour la gestion des accès et
+        des <span class="text-Neutral">tokens</span>. J'utilise également des
+        <span class="text-Neutral">outils essentiels</span> tels que
+        <span class="text-Neutral">body-parser</span>,
+        <span class="text-Neutral">cors</span>, ainsi que d'autres bibliothèques
+        comme <span class="text-Neutral">sharp</span> et
+        <span class="text-Neutral">multer</span> pour
+        <span class="text-Neutral">faciliter</span> la gestion des
+        <span class="text-Neutral">fichiers</span>. Ces bibliothèques sont
+        présentes dans mon code pour rendre
+        <span class="text-Neutral">possible</span> la gestion et le
+        fonctionnement de manière plus
+        <span class="text-Neutral">simple</span> et
+        <span class="text-Neutral">efficace</span>.
       </p>
     </div>
     <div name="bdStockage">
       <h3>Base de donnée et stockage</h3>
       <h4>MongoDB</h4>
       <p>
-        J'aime me lancer des défis de temps en temps, et MongoDB est le parfait
-        compagnon pour cela. J'ai voulu profiter des avantages des deux mondes,
-        et après des recherches approfondies et avec l'aide d'un contact dans le
-        domaine IT, j'ai mis en place un cluster Docker avec plusieurs shards.
-        Cela me permet également de bénéficier de la haute disponibilité, même
-        si ce n'est pas l'objectif principal ici, car tout est regroupé au même
-        endroit. De plus, je peux effectuer des transactions (sessions), ce qui
-        est vraiment pratique. J'ai également exploré les fonctionnalités
-        d'agrégation et bien d'autres. Aujourd'hui, je me sens à l'aise avec
-        MongoDB, même si je n'ai pas encore soumis mon niveau à un développeur
-        spécialisé en bases de données. Je me forme surtout pour moi-même, et je
-        ne compte pas m'arrêter là. Je n'aurai pas le choix si je veux réaliser
-        mon projet personnel secret ! Ma façon d'utiliser MongoDB est assez
-        simple en général : j'ai des collections qui sont propres à un contexte
-        spécifique, et je crée des liens entre ces collections en utilisant des
-        variables qui contiennent les identifiants MongoDB des autres
-        collections. J'utilise ensuite des méthodes de peuplement (populate)
-        pour faciliter la récupération des données. En résumé, j'apprécie
-        énormément cette logique de chaîne de production que MongoDB avec
-        Mongoose me permet de mettre en place.
+        J'aime me lancer des <span class="text-Neutral">défis</span> de temps en
+        temps, et<span class="text-Neutral">MongoDB</span> est le
+        <span class="text-Neutral">parfait compagnon</span> pour cela. J'ai
+        voulu profiter des <span class="text-Neutral">avantages</span> des
+        <span class="text-Neutral">deux mondes</span>, et après des
+        <span class="text-Neutral">recherches approfondies</span> et avec
+        l'<span class="text-Neutral">aide d'un contact</span> dans le domaine
+        <span class="text-Neutral">IT</span>, j'ai mis en place un
+        <span class="text-Neutral">cluster Docker</span> avec plusieurs
+        <span class="text-Neutral">shards</span>. Cela me permet également de
+        bénéficier de la <span class="text-Neutral">haute disponibilité</span>,
+        même si ce n'est pas l'<span class="text-Neutral"
+          >objectif principal</span
+        >
+        ici, car tout est regroupé au même endroit. De plus, je peux
+        <span class="text-Neutral">effectuer des transactions (sessions)</span>,
+        ce qui est vraiment <span class="text-Neutral">pratique</span>. J'ai
+        également exploré les fonctionnalités d'<span class="text-Neutral"
+          >agrégation</span
+        >
+        et bien d'autres. Aujourd'hui, je me sens
+        <span class="text-Neutral">à l'aise avec MongoDB</span>, même si je n'ai
+        pas encore <span class="text-Neutral">soumis mon niveau</span> à un
+        développeur <span class="text-Neutral">spécialisé</span> en bases de
+        données. Je me
+        <span class="text-Neutral">forme surtout pour moi-même</span>, et je ne
+        <span class="text-Neutral">compte pas m'arrêter</span> là. Je n'aurai
+        pas le choix si je veux <span class="text-Neutral">réaliser</span> mon
+        <span class="text-Neutral">projet personnel</span> secret ! Ma façon
+        d'<span class="text-Neutral">utiliser MongoDB</span> est assez
+        <span class="text-Neutral">simple</span>
+        en général : j'ai des <span class="text-Neutral">collections</span> qui
+        sont propres à un <span class="text-Neutral">contexte</span> spécifique,
+        et je crée des <span class="text-Neutral">liens entre</span> ces
+        <span class="text-Neutral">collections</span> en utilisant des variables
+        qui contiennent les identifiants MongoDB des autres collections.
+        J'utilise ensuite des méthodes de
+        <span class="text-Neutral">peuplement (populate)</span> pour faciliter
+        la <span class="text-Neutral">récupération des données</span>. En
+        résumé, j'<span class="text-Neutral">apprécie</span> énormément cette
+        <span class="text-Neutral">logique</span> de chaîne de production que
+        <span class="text-Neutral">MongoDB avec Mongoose</span> me permet de
+        mettre en place.
       </p>
       <h4>Minio</h4>
       <p>
-        À ce niveau-là, je n'ai pas grand-chose à dire, car je n'ai pas besoin
-        d'une grande capacité de stockage. J'ai mis en place une sauvegarde sur
-        un conteneur Docker où j'ai installé Minio. C'est similaire à la façon
-        dont je travaillerais avec un compte AWS d'Amazon ou un service de
-        stockage R2 de CloudFlare. Minio me permet d'avoir une petite gestion
-        des données et des droits, ainsi qu'une interface visuelle pour
+        À ce niveau-là,
+        <span class="text-Neutral">je n'ai pas grand-chose à dire</span>, car je
+        n'ai pas besoin d'une grande capacité de stockage. J'ai mis en place une
+        sauvegarde sur un conteneur <span class="text-Neutral">Docker</span> où
+        j'ai installé <span class="text-Neutral">Minio</span>. C'est
+        <span class="text-Neutral">similaire</span> à la façon dont je
+        travaillerais avec un compte
+        <span class="text-Neutral">AWS</span> d'Amazon ou un service de stockage
+        <span class="text-Neutral">R2</span> de CloudFlare. Minio me permet
+        d'avoir une petite
+        <span class="text-Neutral">gestion des données et des droits</span>,
+        ainsi qu'une <span class="text-Neutral">interface visuelle</span> pour
         consulter en temps réel les données enregistrées.
       </p>
     </div>
