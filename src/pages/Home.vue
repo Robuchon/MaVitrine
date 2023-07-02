@@ -98,7 +98,7 @@
         <a
           href="https://github.com/Robuchon/Le-petit-salon"
           target="_blank"
-          class="mx-auto duration-300 hover:scale-[200%]"
+          class="mx-auto sm:duration-300 sm:hover:scale-[200%]"
         >
           <img src="/img/home/gitSalon.png" alt="" class="h-36" />
         </a>
@@ -120,7 +120,7 @@
         <a
           href="https://reave.gg"
           target="_blank"
-          class="mx-auto duration-300 hover:scale-[200%]"
+          class="mx-auto sm:duration-300 sm:hover:scale-[200%]"
         >
           <img src="/img/home/reave.png" alt="" class="h-36" />
         </a>
@@ -141,7 +141,7 @@
         <a
           href="https://ladyacadia.fr/home"
           target="_blank"
-          class="mx-auto duration-300 hover:scale-[200%]"
+          class="mx-auto sm:duration-300 sm:hover:scale-[200%]"
         >
           <img src="/img/home/maFemme.png" alt="" class="h-36" />
         </a>
@@ -163,7 +163,7 @@
         <a
           href="https://9ca2847f.adp.pages.dev/home"
           target="_blank"
-          class="mx-auto duration-300 hover:scale-[200%]"
+          class="mx-auto sm:duration-300 sm:hover:scale-[200%]"
         >
           <img src="/img/home/beauPere.png" alt="" class="h-36" />
         </a>
