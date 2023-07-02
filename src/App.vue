@@ -58,24 +58,24 @@
         aria-hidden="true"
       >
         <div
-          class="aspect-[1155/678] w-[72.1875rem] bg-gradient-to-br from-[#fdb720] to-[#2ed5ff] opacity-30"
+          class="aspect-[1155/678] w-[72.1875rem] bg-gradient-to-r from-[#e600ff] via-[#f7ed2a] to-[#2ed5ff] opacity-30"
           style="
             clip-path: polygon(
               74.1% 56.1%,
               100% 38.6%,
               97.5% 73.3%,
               85.5% 100%,
-              80.7% 98.2%,
+              50.7% 98.2%,
               72.5% 67.7%,
               60.2% 37.8%,
               52.4% 32.2%,
               47.5% 41.9%,
-              45.2% 65.8%,
+              5.2% 95.8%,
               27.5% 23.5%,
               0.1% 35.4%,
               17.9% 0.1%,
               27.6% 23.5%,
-              76.1% 2.6%,
+              76.1% 1.6%,
               74.1% 56.1%
             );
           "
@@ -86,25 +86,25 @@
         aria-hidden="true"
       >
         <div
-          class="aspect-[1155/678] w-[72.1875rem] bg-gradient-to-br from-[#67e8f9] to-[#D926AA] opacity-30"
+          class="aspect-[1155/678] w-[72.1875rem] bg-gradient-to-r from-[#67e8f9] from-20% via-[#8689b5] via-50% to-[#ec3636] to-20% opacity-30"
           style="
             clip-path: polygon(
-              74.1% 56.1%,
+              94.1% 6.1%,
               100% 38.6%,
               97.5% 73.3%,
               85.5% 100%,
               80.7% 98.2%,
-              72.5% 67.7%,
-              60.2% 37.8%,
-              52.4% 32.2%,
+              82.5% 37.7%,
+              60.2% 57.8%,
+              62.4% 22.2%,
               47.5% 41.9%,
-              45.2% 65.8%,
-              27.5% 23.5%,
-              0.1% 35.4%,
-              17.9% 0.1%,
-              27.6% 23.5%,
-              76.1% 2.6%,
-              74.1% 56.1%
+              35.2% 85.8%,
+              37.5% 33.5%,
+              0% 45.4%,
+              1.9% 0.1%,
+              7.6% 17.5%,
+              46.1% 12.6%,
+              74.1% 16.1%
             );
           "
         />
@@ -114,7 +114,7 @@
         aria-hidden="true"
       >
         <div
-          class="aspect-[1155/678] w-[72.1875rem] bg-gradient-to-br from-[#67e8f9] to-[#4ade80] opacity-30"
+          class="aspect-[1155/678] w-[72.1875rem] bg-gradient-to-r from-[#67e8f9] from-40% via-[#e6f1f359] to-[#4ade80] to-40% opacity-30"
           style="
             clip-path: polygon(
               74.1% 56.1%,
@@ -142,7 +142,7 @@
         aria-hidden="true"
       >
         <div
-          class="aspect-[1155/678] w-[72.1875rem] bg-gradient-to-br from-[#b50303] to-[#e83030] opacity-30"
+          class="aspect-[1155/678] w-[72.1875rem] bg-gradient-to-r from-[#f70000] via-[#ff0beb] to-[#e83030] opacity-30"
           style="
             clip-path: polygon(
               74.1% 56.1%,
@@ -172,7 +172,7 @@
       :target="selectInput.value"
       :navigation="navigation"
     ></NavbarTarget>
-    <RouterView class="z-10 mx-auto px-2"></RouterView>
+    <RouterView class="z-10 mx-auto px-4"></RouterView>
     <Footer class="z-10"></Footer>
   </div>
 </template>
