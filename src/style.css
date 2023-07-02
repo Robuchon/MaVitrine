@@ -23,7 +23,7 @@
         @apply text-Primary text-base font-normal mt-4
     }
     a {
-        @apply text-Primary text-base font-normal underline hover:decoration-double underline-offset-2 decoration-Secondary hover:decoration-Neutral
+        @apply text-Primary text-base font-normal underline hover:text-Neutral underline-offset-2 decoration-Secondary hover:decoration-Neutral
     }
 }
 @tailwind utilities;
