@@ -2,6 +2,7 @@
   <div class="flex flex-col justify-between p-2">
     <label
       class="flex items-center justify-between text-base font-normal text-Neutral"
+      :style="classLabelRef"
       :for="data.name"
     >
       {{ data.label }}
@@ -28,21 +29,17 @@
 </template>
 
 <script setup>
+import { ref, watch } from "vue";
+
 const props = defineProps(["data", "value", "error"]);
 const emit = defineEmits(["action"]);
-/** :data="inputExemple"
- * inputExemple: {
- *  label: "Exemple",
- *  name: "exemple",
- *  type: "select",
- *  value: "",
- *  options: [""],
- * },
- */
-/** v-model="inputExemple.value"
- * ce qui va etre submit
- */
-/** :error="errors[exemple]"
- * retour de l'erreur
- */
+
+const classLabelRef = ref(String);
+
+watch(
+  () => props.data.classLabel,
+  () => {
+    classLabelRef.value = { marginBottom: props.data.classLabel + "px" };
+  },
+);
 </script>
