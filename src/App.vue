@@ -1,5 +1,5 @@
 <template>
-  <div class="relative flex min-h-screen flex-col justify-between">
+  <div class="relative flex min-h-screen flex-col">
     <div
       class="absolute left-0 right-0 top-0 bottom-0 w-full overflow-hidden lg:w-full"
     >
@@ -86,7 +86,7 @@
         aria-hidden="true"
       >
         <div
-          class="aspect-[1155/678] w-[72.1875rem] bg-gradient-to-r from-[#67e8f9] from-20% via-[#8689b5] via-50% to-[#ec3636] to-20% opacity-30"
+          class="from-20% via-50% to-20% aspect-[1155/678] w-[72.1875rem] bg-gradient-to-r from-[#67e8f9] via-[#8689b5] to-[#ec3636] opacity-30"
           style="
             clip-path: polygon(
               94.1% 6.1%,
@@ -114,7 +114,7 @@
         aria-hidden="true"
       >
         <div
-          class="aspect-[1155/678] w-[72.1875rem] bg-gradient-to-r from-[#67e8f9] from-40% via-[#e6f1f359] to-[#4ade80] to-40% opacity-30"
+          class="from-40% to-40% aspect-[1155/678] w-[72.1875rem] bg-gradient-to-r from-[#67e8f9] via-[#e6f1f359] to-[#4ade80] opacity-30"
           style="
             clip-path: polygon(
               74.1% 56.1%,
@@ -172,8 +172,17 @@
       :target="selectInput.value"
       :navigation="navigation"
     ></NavbarTarget>
-    <RouterView class="z-10 mx-auto px-4"></RouterView>
-    <Footer class="z-10"></Footer>
+    <transition
+      enter-active-class="transition ease-out delay-150 duration-200"
+      enter-from-class="opacity-0"
+      enter-to-class="opacity-100"
+      leave-active-class="transition ease-in duration-150"
+      leave-from-class="opacity-100"
+      leave-to-class="opacity-0"
+      ><RouterView class="z-10 mx-auto px-4"></RouterView
+    ></transition>
+
+    <Footer class="z-10 mt-auto"></Footer>
   </div>
 </template>
 
