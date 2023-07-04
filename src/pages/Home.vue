@@ -1,10 +1,10 @@
 <template>
   <div class="flex max-w-2xl flex-col items-center">
-    <h1 class="text-center">Bonjour Chez moi</h1>
-    <h3 class="max-w-lg text-center">
-      Un accueil chaleureux... Parce que je préfère simplifier et vous guider
-      dans mon parcours.
-    </h3>
+    <h1 class="text-center">Bienvenu chez Dev Prog Creation</h1>
+    <h4 class="max-w-md">Je me presente: </h4>
+    <h5 class="mt-2">mon nom est Robuchon Hugues</h5>
+    <h5 class="mt-2">Je suis un Jeune Développeur web FullStack JS</h5>
+    <h5 class="mt-2">j'ai 37 ans</h5>
     <h4 class="text-center">
       Permettez-moi de vous partager mon parcours, qui a été une aventure riche
       en expériences et en rebondissements.
