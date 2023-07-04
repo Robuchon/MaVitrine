@@ -11,7 +11,12 @@
             class="flex cursor-pointer items-center py-4 text-center"
             @click="goTo(item)"
           >
-            <p class="mx-auto my-0 hover:text-Neutral">
+            <p class="mx-auto my-0"
+            :class="
+              item.name === router.currentRoute.value.name 
+                ? 'text-Neutral'
+                : 'text-Primary hover:text-Neutral'
+            ">
               {{ item.name }}
             </p>
           </div>

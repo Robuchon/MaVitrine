@@ -1,18 +1,18 @@
 <template>
   <Disclosure as="nav" class="z-30" v-slot="{ open }">
     <div
-      class="px-8 pt-4 md:px-8 md:pt-10 lg:px-24 xl:mx-auto  xl:w-[1200px] xl:px-0"
+      class="px-8 pt-4 md:px-8 md:pt-10 lg:px-24 xl:mx-auto xl:w-[1200px] xl:px-0"
     >
       <div class="flexitems-center justify-between">
         <PopoverGroup
           as="nav"
-          class="mx-auto flex flex-wrap  justify-center space-x-2 lg:space-x-8 xl:basis-1/2"
+          class="mx-auto flex flex-wrap justify-center space-x-2 lg:space-x-8 xl:basis-1/2"
         >
           <div v-for="item in navigation">
             <div v-if="item.dataNav === undefined" class="flex w-24">
               <router-link
                 :to="item.goto"
-                class="my-auto block w-full rounded-md px-3 py-2 text-center text-base font-medium"
+                class="my-auto block w-full rounded-md px-3 py-2 text-center text-base font-medium no-underline"
                 :class="
                   item.goto === router.currentRoute.value.path
                     ? 'text-Neutral'
@@ -31,7 +31,8 @@
                 <p
                   class="my-auto block w-full rounded-md px-3 py-2 text-center text-base font-medium hover:bg-Secondary"
                   :class="
-                    'Services' === router.currentRoute.value.name
+                    'Input' === router.currentRoute.value.name ||
+                    'Button' === router.currentRoute.value.name
                       ? 'text-Neutral'
                       : 'text-Primary hover:text-Neutral'
                   "
