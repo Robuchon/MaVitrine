@@ -1,7 +1,7 @@
 <template>
   <Disclosure as="nav" class="z-30" v-slot="{ open }">
     <div
-      class="px-8 py-3 md:px-8 md:py-6 lg:px-24 xl:mx-auto xl:w-[1200px] xl:px-0"
+      class="px-8 pt-4 md:px-8 md:pt-10 lg:px-24 xl:mx-auto xl:w-[1200px] xl:px-0"
     >
       <div class="flexitems-center justify-between">
         <PopoverGroup
@@ -16,7 +16,7 @@
                 :class="
                   item.goto === router.currentRoute.value.path
                     ? 'text-Neutral'
-                    : 'text-Primary hover:bg-Secondary hover:text-Accent'
+                    : 'text-Primary hover:bg-Secondary hover:text-Neutral'
                 "
               >
                 {{ item.name }}

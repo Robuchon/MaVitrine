@@ -1,47 +1,44 @@
 @tailwind base;
 @tailwind components;
 @layer components {
-  h1 {
-    @apply mt-8 text-4xl font-semibold  text-Primary;
-  }
-  h2 {
-    @apply mt-8 text-3xl font-semibold text-Primary;
-  }
-  h3 {
-    @apply mt-8 text-2xl font-semibold text-Primary;
-  }
-  h4 {
-    @apply mt-8 text-xl font-semibold text-Secondary;
-  }
-  h5 {
-    @apply mt-8 text-base font-semibold text-Primary;
-  }
-  h6 {
-    @apply mt-8 text-sm font-semibold text-Primary;
-  }
-  p {
-    @apply mt-4 text-justify text-base font-normal text-Primary;
-  }
-  a {
-    @apply text-base font-normal text-Primary underline decoration-Secondary underline-offset-2 hover:text-Neutral hover:decoration-Neutral;
-  }
-  span {
-    @apply text-base font-semibold text-Secondary
-  }
+    h1 {
+        @apply text-Primary text-4xl font-semibold  mt-16
+    }
+    h2 {
+        @apply text-Primary text-3xl font-semibold mt-8 
+    }
+    h3 {
+        @apply text-Primary text-2xl font-semibold mt-8 
+    }
+    h4 {
+        @apply text-Secondary shadow-Neutral text-xl font-semibold mt-8 
+    }
+    h5 {
+        @apply text-Primary text-base font-semibold mt-8 
+    }
+    h6 {
+        @apply text-Primary text-sm font-semibold mt-8 
+    }
+    p {
+        @apply text-Primary text-justify text-base font-normal mt-4
+    }
+    a {
+        @apply text-Primary text-base font-normal underline hover:text-Neutral underline-offset-2 decoration-Secondary hover:decoration-Neutral
+    }
 }
 @tailwind utilities;
 @layer utilities {
-  body::-webkit-scrollbar {
-    width: 10px; /* width of the entire scrollbar */
+    body::-webkit-scrollbar {
+      width: 10px; /* width of the entire scrollbar */
+    }
+  
+    body::-webkit-scrollbar-track {
+      background: #4c1d95; /* color of the tracking area */
+    }
+  
+    body::-webkit-scrollbar-thumb {
+      background-color: #f5f5f4; /* color of the scroll thumb */
+      border-radius: 20px; /* roundness of the scroll thumb */
+      border: 3px solid #e986ed;
+    }
   }
-
-  body::-webkit-scrollbar-track {
-    background: rgb(76 29 149); /* color of the tracking area */
-  }
-
-  body::-webkit-scrollbar-thumb {
-    background-color: #310e65; /* color of the scroll thumb */
-    border-radius: 20px; /* roundness of the scroll thumb */
-    border: 3px solid #e986ed;
-  }
-}

@@ -2,31 +2,24 @@
   <div
     class="overflow-hidden rounded-lg shadow-lg ring-1 ring-Primary ring-opacity-5"
   >
-    <div class="mx-auto flex w-28 flex-col bg-Accent">
+    <div class="mx-auto flex w-28 flex-col bg-Secondary">
       <div>
-        <div class="grid py-2 gap-2">
-          <button
+        <div class="grid">
+          <div
             v-for="item in dataNav"
             :key="item.name"
-            class="my-auto block w-full rounded-md px-3 py-2 text-base font-medium"
-            :class="
-              item.name === router.currentRoute.value.name
-                ? ''
-                : 'hover:bg-Secondary'
-            "
+            class="flex cursor-pointer items-center py-4 text-center"
             @click="goTo(item)"
           >
-            <p
-              class="mx-auto my-0 text-center"
-              :class="
-                item.name === router.currentRoute.value.name
-                  ? 'text-Neutral'
-                  : 'text-Primary  hover:text-Accent'
-              "
-            >
+            <p class="mx-auto my-0"
+            :class="
+              item.name === router.currentRoute.value.name 
+                ? 'text-Neutral'
+                : 'text-Primary hover:text-Neutral'
+            ">
               {{ item.name }}
             </p>
-          </button>
+          </div>
         </div>
       </div>
     </div>
