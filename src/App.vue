@@ -179,7 +179,9 @@
           ? 'shadow'
           : scrollPosition > 200 && scrollPosition < 300
           ? 'shadow-md'
-          : scrollPosition > 300 ? 'shadow-2xl':'',
+          : scrollPosition > 300
+          ? 'shadow-2xl'
+          : '',
       ]"
       :style="classOpacity"
     >
@@ -208,18 +210,19 @@ import Footer from "./components/footer/Footer.vue";
 import { ref, onMounted, watch } from "vue";
 
 const navigation = ref([
-  { name: "Moi", goto: "/home" },
-  { name: "Techno", goto: "/techno" },
+  { name: "Moi", goto: "/home", logo: "HomeIcon" },
+  { name: "Techno", goto: "/techno", logo: "DocumentTextIcon" },
   {
     name: "Demo",
+    logo: "BeakerIcon",
     dataNav: [
       { name: "Input", goto: "/input" },
       { name: "Button", goto: "/button" },
     ],
   },
-
-  { name: "Contact", goto: "/Contact" },
+  { name: "Contact", goto: "/Contact", logo: "ChatBubbleBottomCenterTextIcon" },
 ]);
+
 const isScrolled = ref(false);
 const scrollPosition = ref(0);
 const classOpacity = ref({ "background-color": "rgb(76 29 149 / 0)" });
