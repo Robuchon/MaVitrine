@@ -190,7 +190,8 @@
         :navigation="navigation"
       ></NavbarTarget>
     </div>
-    <transition
+    <div class="overflow-x-hidden">
+      <transition
       enter-active-class="transition ease-out delay-150 duration-200"
       enter-from-class="opacity-0"
       enter-to-class="opacity-100"
@@ -199,6 +200,8 @@
       leave-to-class="opacity-0"
       ><RouterView class="z-10 mx-auto px-4"></RouterView
     ></transition>
+    </div>
+    
 
     <Footer class="z-10 mt-auto"></Footer>
   </div>
