@@ -167,11 +167,27 @@
       </div>
     </div>
 
-    <NavbarTarget
-      class="z-20"
-      :target="selectInput.value"
-      :navigation="navigation"
-    ></NavbarTarget>
+    <div
+      class="sticky top-0 z-20"
+      :class="[
+        isScrolled ? 'shadow-Accent' : '',
+        scrollPosition === 0 || scrollPosition < 50
+          ? 'shadow-none'
+          : scrollPosition > 50 && scrollPosition < 100
+          ? 'shadow-sm'
+          : scrollPosition > 100 && scrollPosition < 200
+          ? 'shadow'
+          : scrollPosition > 200 && scrollPosition < 300
+          ? 'shadow-md'
+          : scrollPosition > 300 ? 'shadow-2xl':'',
+      ]"
+      :style="classOpacity"
+    >
+      <NavbarTarget
+        :target="selectInput.value"
+        :navigation="navigation"
+      ></NavbarTarget>
+    </div>
     <transition
       enter-active-class="transition ease-out delay-150 duration-200"
       enter-from-class="opacity-0"
@@ -189,7 +205,8 @@
 <script setup>
 import NavbarTarget from "@components/NavbarTarget.vue";
 import Footer from "./components/footer/Footer.vue";
-import { ref } from "vue";
+import { ref, onMounted, watch } from "vue";
+
 const navigation = ref([
   { name: "Moi", goto: "/home" },
   { name: "Techno", goto: "/techno" },
@@ -203,6 +220,9 @@ const navigation = ref([
 
   { name: "Contact", goto: "/Contact" },
 ]);
+const isScrolled = ref(false);
+const scrollPosition = ref(0);
+const classOpacity = ref({ "background-color": "rgb(76 29 149 / 0)" });
 
 const selectInput = ref({
   label: "changer de navbar",
@@ -215,5 +235,30 @@ const selectInput = ref({
     { slot: "Side Bar", value: "SideNavbar" },
     { slot: "Top Navbar", value: "TopNavbar" },
   ],
+});
+
+function handleScroll() {
+  isScrolled.value = window.pageYOffset > 0;
+  scrollPosition.value = window.pageYOffset;
+}
+
+watch(
+  () => scrollPosition.value,
+  () => {
+    if (scrollPosition.value < 100) {
+      classOpacity.value = {
+        "background-color":
+          "rgb(76 29 149 / " + scrollPosition.value / 100 + ")",
+      };
+    } else if (scrollPosition.value > 100) {
+      classOpacity.value = {
+        "background-color": "rgb(76 29 149 / 1)",
+      };
+    }
+  },
+);
+
+onMounted(() => {
+  window.addEventListener("scroll", handleScroll);
 });
 </script>

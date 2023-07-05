@@ -27,7 +27,7 @@
 
 <script setup>
 import { defineComponent, h } from "vue";
-import SvgTarget from "../SvgTarget.vue";
+import SvgTarget from "../svg/SvgTarget.vue";
 
 const navigation = [
 {
