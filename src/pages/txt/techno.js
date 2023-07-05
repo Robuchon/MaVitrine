@@ -238,6 +238,8 @@ const fr = [
     contents: [
       {
         title: "MongoDB",
+        logoType: "svg",
+        logo: "MongoDB",
         txt: `J'aime me lancer des <span>défis</span> de temps en
         temps, et<span>MongoDB</span> est le
         <span>parfait compagnon</span> pour cela. J'ai
@@ -284,6 +286,7 @@ const fr = [
       },
       {
         title: "Minio",
+        logo: "/img/techno/logo-minio.png",
         txt: `À ce niveau-là,
         <span>je n'ai pas grand-chose à dire</span>, car je
         n'ai pas besoin d'une grande capacité de stockage. J'ai mis en place une
