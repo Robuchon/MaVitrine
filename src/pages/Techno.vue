@@ -1,5 +1,5 @@
 <template>
-  <div class="flex max-w-4xl flex-col items-center">
+  <div class="mb-96 flex max-w-4xl flex-col items-center">
     <h1>Dans les grandes lignes</h1>
     <p class="max-w-2xl">
       Je considère encore être un enfant dans
@@ -10,13 +10,25 @@
       J'ai hâte de vous faire <span>partager ma vision</span> de ce domaine
       captivant.
     </p>
-    <div class="relative grid gap-2 sm:grid-cols-3">
+    <div class="relative grid grid-cols-1 gap-2">
       <div v-for="(section, index) in Txt.fr" :name="section.id">
         <h3 class="h-16 text-center">{{ section.title }}</h3>
-        <div class="grid grid-cols-1 gap-2">
-          <div v-for="(item, indexBis) in section.contents">
+        <div class="grid gap-2 sm:grid-cols-3">
+          <div
+          v-for="(item, indexBis) in section.contents"
+          @mouseover="(openSection = true), (sectionSelect = index), (itemSelect = indexBis)"
+          @mouseleave="openSection = false"
+          class=" cursor-pointer"
+          >
             <div
-              class="absolute z-10 w-[200%] rounded-2xl bg-Accent p-5 text-black opacity-0 shadow-xl shadow-Secondary/30 hover:-translate-x-[25%] md:transform md:transition-all md:duration-300 md:hover:opacity-100"
+              class="absolute z-10 w-[200%] rounded-2xl bg-Accent p-5 text-black shadow-lg shadow-Secondary/30 md:transform md:transition-all md:duration-300 pointer-events-none xl:-translate-x-[25%] md:-translate-y-[10%] border-Primary/20 border-4"
+              :class="
+                (indexBis % 3 === 0
+                  ? 'md:-translate-x-[0%]'
+                  : (indexBis + 1) % 3 === 0
+                  ? 'md:-translate-x-[50%]'
+                  : 'md:-translate-x-[25%]') , openSection && sectionSelect === index && itemSelect === indexBis ? 'opacity-100' : 'opacity-0'
+              "
               @click="
                 (open = true), (sectionSelect = index), (itemSelect = indexBis)
               "
@@ -26,13 +38,13 @@
                   <SvgTarget
                     v-if="item?.logoType === 'svg'"
                     :target="item.logo"
-                    class="z-10 my-auto mx-auto flex h-full max-h-48 w-max max-w-[200px] items-center justify-center"
+                    class=" my-auto mx-auto flex h-full max-h-48 w-max max-w-[200px] items-center justify-center"
                   ></SvgTarget>
                   <img
                     v-else
                     :src="item.logo"
                     alt=""
-                    class="z-10 my-auto mx-auto flex h-full max-h-48 w-max max-w-[200px] rounded-xl"
+                    class=" my-auto mx-auto flex h-full max-h-48 w-max max-w-[200px] rounded-xl"
                   />
                   <div
                     class="absolute top-5 bottom-5 right-5 left-5 -z-10 m-auto bg-white/30 blur-xl"
@@ -150,8 +162,10 @@ import {
 } from "@headlessui/vue";
 
 const open = ref(false);
+const openSection = ref(false);
 const sectionSelect = ref("");
 const itemSelect = ref("");
+
 </script>
 
 <style lang="scss" scoped></style>
