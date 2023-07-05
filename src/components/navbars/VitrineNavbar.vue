@@ -23,30 +23,29 @@
                   :target="item.logo"
                   class="h-5 w-5 md:mr-2"
                 ></SvgTarget>
-
-                <span class="hidden text-inherit md:block">{{
-                  item.name
-                }}</span>
+                <span class="hidden text-inherit md:block">
+                  {{ item.name }}
+                </span>
               </router-link>
             </div>
             <Popover v-else class="flex" @mouseleave="opendropdown = false">
               <PopoverButton @mouseover="opendropdown = true">
                 <p
-                  class="my-auto flex w-full items-center rounded-md p-1 text-center text-base font-medium hover:bg-Secondary md:px-3 md:py-2"
+                  class="my-auto flex w-full items-center rounded-md p-1 text-center text-base font-medium hover:bg-Secondary hover:text-Accent md:px-3 md:py-2"
                   :class="
                     'Input' === router.currentRoute.value.name ||
                     'Button' === router.currentRoute.value.name
                       ? 'text-Secondary'
-                      : 'text-Primary hover:text-Accent'
+                      : 'text-Primary'
                   "
                 >
                   <SvgTarget
                     :target="item.logo"
                     class="h-5 w-5 md:mr-2"
                   ></SvgTarget>
-                  <span class="hidden text-inherit md:block">{{
-                    item.name
-                  }}</span>
+                  <span class="hidden text-inherit md:block">
+                    {{ item.name }}
+                  </span>
                 </p>
               </PopoverButton>
               <transition
@@ -59,7 +58,7 @@
               >
                 <PopoverPanel
                   v-if="opendropdown"
-                  class="absolute z-20 mt-7 md:mt-10 -ml-5"
+                  class="absolute z-20 mt-7 -ml-10 md:mt-10 md:-ml-2"
                   :class="opendropdown"
                   static
                 >

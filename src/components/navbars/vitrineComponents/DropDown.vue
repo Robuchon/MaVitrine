@@ -20,7 +20,7 @@
               class="mx-auto my-0 text-center"
               :class="
                 item.name === router.currentRoute.value.name
-                  ? 'text-Neutral'
+                  ? 'text-Secondary'
                   : 'text-Primary  hover:text-Accent'
               "
             >
