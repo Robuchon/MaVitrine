@@ -10,11 +10,13 @@
 </template>
 
 <script>
-import * as footer from "../assets/svg/footer/footerImport";
+import * as footer from "../../assets/svg/footer/footerImport";
+import * as divers from "../../assets/svg/divers/diversImport";
 
 export default {
   components: {
-    ...footer,
+    ...footer, 
+    ...divers,
   },
   props: ["target", "width", "color1", "height"],
   methods: {
