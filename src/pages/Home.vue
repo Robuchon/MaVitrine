@@ -19,9 +19,10 @@
       </div>
     </div>
     <div class="flex flex-col items-center">
-      <p>
-        <span class="text-Success">Moi avant</span> /
+      <p class="grid grid-cols-3 mx-auto w-72">
         <span class="text-Error">Developement</span>
+        <span class="text-center text-white font-black">/</span>
+        <span class="text-Success">Moi avant</span>
       </p>
       <InputsTarget
         :data="choix"
