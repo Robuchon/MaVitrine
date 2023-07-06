@@ -15,12 +15,16 @@
         <h3 class="h-16 text-center">{{ section.title }}</h3>
         <div class="grid gap-2 sm:grid-cols-3">
           <div
-          v-for="(item, indexBis) in section.contents"
-          @mouseover="(openSection = true), (sectionSelect = index), (itemSelect = indexBis)"
-          @mouseleave="openSection = false"
-          class=" cursor-pointer"
+            v-for="(item, indexBis) in section.contents"
+            @mouseover="
+              (openSection = true),
+                (sectionSelect = index),
+                (itemSelect = indexBis)
+            "
+            @mouseleave="openSection = false"
+            class="cursor-pointer"
           >
-            <div
+            <!-- <div
               class="absolute z-10 w-[200%] rounded-2xl bg-Accent p-5 text-black shadow-lg shadow-Secondary/30 md:transform md:transition-all md:duration-300 pointer-events-none xl:-translate-x-[25%] md:-translate-y-[10%] border-Primary/20 border-4"
               :class="
                 (indexBis % 3 === 0
@@ -52,30 +56,32 @@
                 </div>
               </div>
               <p v-html="item.txt" class=""></p>
-            </div>
+            </div> -->
             <div
-              class="rounded-2xl bg-Success/10 p-2"
+              class="flex h-full w-full transform flex-col justify-between rounded-2xl bg-Success/10 p-2 duration-200 hover:z-10 hover:scale-125 hover:bg-Accent/80 max-h-56"
               @click="
                 (open = true), (sectionSelect = index), (itemSelect = indexBis)
               "
             >
-              <div class="relative z-0 flex aspect-[16/9] w-full">
+              <div
+                class="relative z-0 mx-auto my-auto flex h-[60%] w-[90%]"
+              >
                 <SvgTarget
                   v-if="item?.logoType === 'svg'"
                   :target="item.logo"
-                  class="z-10 my-auto mx-auto flex h-max max-h-[150px] w-max max-w-[200px] items-center justify-center"
+                  class="z-10 w-9/10 flex items-center justify-center"
                 ></SvgTarget>
                 <img
                   v-else
                   :src="item.logo"
                   alt=""
-                  class="z-10 my-auto mx-auto h-max max-h-[150px] w-max max-w-[200px] rounded-xl"
+                  class="z-10 bg-contain mx-auto rounded-xl"
                 />
                 <div
-                  class="absolute top-5 bottom-5 right-5 left-5 -z-10 m-auto bg-white/30 blur-xl"
+                  class="absolute top-0 bottom-0 right-0 left-0 -z-10 m-auto bg-white/30 blur-xl"
                 ></div>
               </div>
-              <p v-html="item.txt" class="line-clamp-4"></p>
+              <p class="text-justify">{{ item.desc }}</p>
             </div>
           </div>
         </div>
@@ -165,7 +171,6 @@ const open = ref(false);
 const openSection = ref(false);
 const sectionSelect = ref("");
 const itemSelect = ref("");
-
 </script>
 
 <style lang="scss" scoped></style>

@@ -8,6 +8,7 @@ const fr = [
       {
         title: "Vue",
         logo: "/img/techno/Logo-Vuejs.png",
+        desc: "Une solution flexible et performante pour des applications web réactives et élégantes.",
         txt: `<span>Après</span> ma formation qui portait sur le
         framework <span>React</span>, j'ai décidé de tester
         autre chose, et je pense sincèrement que c'était l'une des
@@ -39,6 +40,7 @@ const fr = [
       {
         title: "Vite",
         logo: "/img/techno/logo-with-shadow.png",
+        desc: "Une approche novatrice pour développer des sites web réactifs, interactifs et dynamiques.",
         txt: `<span>Après</span> ma formation qui portait sur le
         framework <span>React</span>, j'ai décidé de tester
         autre chose, et je pense sincèrement que c'était l'une des
@@ -71,6 +73,7 @@ const fr = [
         title: "Axios",
         logoType: "svg",
         logo: "Axios",
+        desc: "La solution de requêtes HTTP incontournable de communication fluide entre frontend et backend.",
         txt: `Je souhaite mettre en avant <span>Axios</span>, car
         c'est l'une de mes
         <span>premières expériences</span> en matière de
@@ -99,6 +102,7 @@ const fr = [
         title: "TailwindCss",
         logoType: "svg",
         logo: "TailwindCss",
+        desc: "le framework CSS intuitif qui vous permet de concevoir des interfaces élégantes et personnalisées.",
         txt: `Tailwind est l'un des <span>outils</span> les plus
         <span>précieux</span> que j'ai découverts dans mon
         parcours de développement.
@@ -123,6 +127,7 @@ const fr = [
       {
         title: "Les autres",
         logo: "/img/techno/logo-js.png",
+        desc: "la clé pour créer des sites web interactifs et dynamiques qui captivent vos visiteurs.",
         txt: `Bien sûr, en plus de Tailwind et Vue, j'ai exploré de nombreux addons et
         bibliothèques qui complètent parfaitement mon flux de développement.
         Parmi eux, je peux mentionner
@@ -156,6 +161,7 @@ const fr = [
         title: "NodeJS",
         logoType: "svg",
         logo: "Node",
+        desc: "La plateforme JavaScript côté serveur qui combine performances et flexibilité.",
         txt: `J'ai pris la décision d'utiliser
         <span>minimim de bibliothèques</span> dans mon
         backend, et je ne sais pas si cela est une mauvaise chose ou non, mais
@@ -176,6 +182,7 @@ const fr = [
       {
         title: "Express",
         logo: "/img/techno/logo-Express.png",
+        desc: "Profitez d'une syntaxe simple et intuitive pour développer des APIs et des routes puissantes.",
         txt: `En ce qui concerne Express, il se peut que je n'aie
         <span>pas approfondi</span> tous les
         <span>aspects</span> de cette bibliothèque. La
@@ -193,6 +200,7 @@ const fr = [
       {
         title: "Mongoose",
         logo: "/img/techno/logo-mongoose.png",
+        desc: "une syntaxe intuitive et fonctionnalités avancées: relations, validation , ect...",
         txt: `<span>Après</span> avoir exploré
         <span>le SQL</span> lors de ma formation
         personnelle avec une gestion simple de quelques valeurs, je me suis
@@ -211,6 +219,7 @@ const fr = [
       {
         title: "Les autres",
         logo: "/img/techno/logo-js.png",
+        desc: "la clé pour créer des sites web interactifs et dynamiques qui captivent vos visiteurs.",
         txt: `J'ai adopté l'<span>utilisation</span> de
         différentes bibliothèques dans mon
         <span>développement</span>, notamment
@@ -240,6 +249,7 @@ const fr = [
         title: "MongoDB",
         logoType: "svg",
         logo: "MongoDB",
+        desc: " la BD NoSQL flexible qui offre une performance exceptionnelle et une extensibilité sans limites.",
         txt: `J'aime me lancer des <span>défis</span> de temps en
         temps, et<span>MongoDB</span> est le
         <span>parfait compagnon</span> pour cela. J'ai
@@ -287,6 +297,7 @@ const fr = [
       {
         title: "Minio",
         logo: "/img/techno/logo-minio.png",
+        desc: "Un stockage d'objets hautement évolutive compatible S3/R2, idéale pour votre site.",
         txt: `À ce niveau-là,
         <span>je n'ai pas grand-chose à dire</span>, car je
         n'ai pas besoin d'une grande capacité de stockage. J'ai mis en place une
@@ -310,6 +321,7 @@ export default { en, fr };
 /* 
 {
   title: "",
+        desc: "ici un petit test",
   txt: ``,
 },
 
@@ -318,6 +330,7 @@ frontEnd: {
     contents: [
       {
         title: "",
+        desc: "ici un petit test",
         txt: ``,
       },
     ]
