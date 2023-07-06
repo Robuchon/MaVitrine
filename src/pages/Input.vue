@@ -3,9 +3,10 @@
     <h1>Input</h1>
     <h3>Ici la liste des Champs de saisi</h3>
     <div class="flex flex-col items-center">
-      <p>
-        <span class="text-Success">Explication</span> /
+      <p class="mx-auto grid w-48 grid-cols-3">
         <span class="text-Error">Action</span>
+        <span class="text-center font-black text-white">/</span>
+        <span class="text-Success">Explication</span>
       </p>
       <InputsTarget
         :data="explication"
@@ -30,28 +31,28 @@
           comment importer dynamiquement des composants et utiliser la directive
           ":is" pour la modification en temps réel d'une page.
         </p>
-        <div class="grid grid-cols-1 gap-3 sm:grid-cols-4">
+        <!-- <div class="grid grid-cols-1 gap-3 sm:grid-cols-4">
           <img
             src="/img/input/exempleBaseInput.png"
             alt=""
-            class="m-auto sm:duration-300 sm:hover:scale-[300%]"
+            class="m-auto sm:duration-300 sm:hover:z-10 sm:hover:translate-x-[100%] sm:hover:scale-[300%]"
           />
           <img
             src="/img/input/import.png"
             alt=""
-            class="m-auto sm:duration-300 sm:hover:scale-[300%]"
+            class="m-auto sm:duration-300 sm:hover:z-10 sm:hover:translate-x-[50%] sm:hover:scale-[300%]"
           />
           <img
             src="/img/input/target.png"
             alt=""
-            class="m-auto sm:duration-300 sm:hover:scale-[300%]"
+            class="m-auto sm:duration-300 sm:hover:z-10 sm:hover:-translate-x-[50%] sm:hover:scale-[300%]"
           />
           <img
             src="/img/input/exempleUse.png"
             alt=""
-            class="m-auto sm:duration-300 sm:hover:scale-[250%]"
+            class="m-auto sm:duration-300 sm:hover:z-10 sm:hover:-translate-x-[100%] sm:hover:scale-[250%]"
           />
-        </div>
+        </div> -->
         <p>
           Ici, sur les quatre images, je vous montre un exemple de ma façon de
           développer. Gardez à l'esprit que je me forme en autodidacte, donc
@@ -59,34 +60,68 @@
           meilleure façon de travailler, elles pourraient ne pas être les
           meilleures pour vous, surtout si vous êtes également développeur.
         </p>
-        <p>
-          Sur la première image, je crée un composant d'entrée de texte.
-          J'apprécie particulièrement cette approche car elle garantit la
-          cohérence de tous les champs de texte sur mon site. De plus, elle me
-          permet de modifier le code à un seul endroit, ce qui facilite la
-          maintenance. J'ai peut-être poussé l'exercice un peu plus loin pour
-          expérimenter différentes approches. Chaque composant a généralement
-          une utilité spécifique, et dans ce cas, il se concentre sur la mise en
-          page du champ de texte sans traiter les données en elles-mêmes.
-        </p>
-        <p>
-          La deuxième image représente un regroupement de composants. Elle
-          permet de rassembler tous les fichiers qui fonctionnent de la même
-          manière. Mes champs de texte sont regroupés ici pour faciliter la
-          gestion d'import et d'export.
-        </p>
-        <p>
-          La troisième image présente un composant simple chargé de gérer
-          l'exportation des données de manière réactive, ainsi que la transition
-          ascendante et descendante des données (props, emit).
-        </p>
-        <p>
-          Enfin, dans la dernière image, nous avons l'importation et
-          l'utilisation du composant "targetInput", comme je l'appelle. J'ai
-          créé une constante en utilisant les références de Vue 3 pour assurer
-          la réactivité du code. Cette page joue le rôle de centre de
-          commandement qui regroupe et configure tous les autres composants.
-        </p>
+        <div class="flex flex-col space-y-5 mt-5">
+          <div class="">
+          <img
+            src="/img/input/exempleBaseInput.png"
+            alt=""
+            class="z-10 float-left m-auto mr-10 w-56 sm:duration-300 sm:hover:z-20 sm:hover:translate-x-[50%] sm:hover:scale-[200%]"
+          />
+          <p class="my-auto">
+            A gauche, je crée un composant d'entrée de texte.
+            J'apprécie particulièrement cette approche car elle garantit la
+            cohérence de tous les champs de texte sur mon site. De plus, elle me
+            permet de modifier le code à un seul endroit, ce qui facilite la
+            maintenance. J'ai peut-être poussé l'exercice un peu plus loin pour
+            expérimenter différentes approches. Chaque composant a généralement
+            une utilité spécifique, et dans ce cas, il se concentre sur la mise
+            en page du champ de texte sans traiter les données en elles-mêmes.
+          </p>
+        </div>
+        <div class="">
+          <img
+            src="/img/input/import.png"
+            alt=""
+            class="float-top z-10  w-full sm:duration-300 sm:hover:z-20 sm:hover:scale-[110%]"
+          />
+          <div class="w-full h-full flex">
+            <p class="mt-5">
+            Au-dessus je représente un regroupement de composants. Elle
+            permet de rassembler tous les fichiers qui fonctionnent de la même
+            manière. Mes champs de texte sont regroupés ici pour faciliter la
+            gestion d'import et d'export.
+          </p>
+          </div>
+          
+        </div>
+        <div class="">
+          <img
+            src="/img/input/target.png"
+            alt=""
+            class="z-10 float-right m-auto ml-10 w-72 sm:duration-300 sm:hover:z-20 sm:hover:-translate-x-[50%] sm:hover:scale-[200%]"
+          />
+          <p class="mt-5">
+            A droite je présente un composant simple chargé de gérer
+            l'exportation des données de manière réactive, ainsi que la
+            transition ascendante et descendante des données (props, emit).
+          </p>
+        </div>
+        <div class="">
+          <img
+            src="/img/input/exempleUse.png"
+            alt=""
+            class="z-10 float-left m-auto mr-10 w-56 sm:duration-300 sm:hover:z-20 sm:hover:translate-x-[50%] sm:hover:-translate-y-[80%] sm:hover:scale-[200%]"
+          />
+          <p class="mt-10">
+            Enfin, a gauche, nous avons l'importation et
+            l'utilisation du composant "targetInput", comme je l'appelle. J'ai
+            créé une constante en utilisant les références de Vue 3 pour assurer
+            la réactivité du code. Cette page joue le rôle de centre de
+            commandement qui regroupe et configure tous les autres composants.
+          </p>
+        </div>
+        </div>
+        
       </div>
       <div v-else>
         <div class="grid grid-cols-1 items-center md:grid-cols-2">
