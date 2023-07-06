@@ -16,6 +16,7 @@
     "flowbite": "^1.6.4",
     "flowbite-vue": "^0.0.10",
     "heroicons": "^2.0.16",
+    "pinia": "^2.1.4",
     "tailwind-merge": "^1.10.0",
     "vue": "^3.2.47",
     "vue-router": "^4.1.6"
