@@ -58,7 +58,7 @@
         aria-hidden="true"
       >
         <div
-          class="aspect-[1155/678] w-[72.1875rem] bg-gradient-to-r from-[#e600ff] via-[#f7ed2a] to-[#2ed5ff] opacity-30"
+          class="aspect-[1155/678] w-[72.1875rem] bg-gradient-to-r from-[#cdbc00] via-[#5c00a3] to-[#1508cc] opacity-30"
           style="
             clip-path: polygon(
               74.1% 56.1%,
@@ -86,7 +86,7 @@
         aria-hidden="true"
       >
         <div
-          class="from-20% via-50% to-20% aspect-[1155/678] w-[72.1875rem] bg-gradient-to-r from-[#67e8f9] via-[#8689b5] to-[#ec3636] opacity-30"
+          class="from-20% via-50% to-20% aspect-[1155/678] w-[72.1875rem] bg-gradient-to-r from-[#0b04c2] via-[#b300d7] to-[#a71567] opacity-30"
           style="
             clip-path: polygon(
               94.1% 6.1%,
@@ -114,7 +114,7 @@
         aria-hidden="true"
       >
         <div
-          class="from-40% to-40% aspect-[1155/678] w-[72.1875rem] bg-gradient-to-r from-[#67e8f9] via-[#e6f1f359] to-[#4ade80] opacity-30"
+          class="from-40% to-40% aspect-[1155/678] w-[72.1875rem] bg-gradient-to-r from-[#b30e71] via-[#b216d9] to-[#7f08ae] opacity-30"
           style="
             clip-path: polygon(
               74.1% 56.1%,

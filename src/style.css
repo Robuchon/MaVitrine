@@ -23,7 +23,7 @@
     @apply mt-4 text-justify text-base font-normal text-Primary;
   }
   a {
-    @apply text-base font-normal text-Primary underline decoration-Secondary underline-offset-2 hover:text-Neutral hover:decoration-Neutral;
+    @apply text-base font-normal text-Info underline decoration-Info underline-offset-2 hover:text-Neutral hover:decoration-Neutral;
   }
   span {
     @apply text-base font-semibold text-Secondary
@@ -36,12 +36,12 @@
   }
 
   body::-webkit-scrollbar-track {
-    background: rgb(76 29 149); /* color of the tracking area */
+    background: rgb(43, 13, 87); /* color of the tracking area */
   }
 
   body::-webkit-scrollbar-thumb {
-    background-color: #310e65; /* color of the scroll thumb */
+    background-color: #fff200; /* color of the scroll thumb */
     border-radius: 20px; /* roundness of the scroll thumb */
-    border: 3px solid #e986ed;
+    border: 3px solid #913e94;
   }
 }
