@@ -19,16 +19,16 @@
       </div>
     </div>
     <div class="flex flex-col items-center">
-      <p class="grid grid-cols-3 mx-auto w-72">
+      <p class="mx-auto flex items-center gap-4">
         <span class="text-Error">Developement</span>
-        <span class="text-center text-white font-black">/</span>
-        <span class="text-Success">Moi avant</span>
-      </p>
-      <InputsTarget
+        <InputsTarget
         :data="choix"
         :error="''"
         v-model="choix.value"
       ></InputsTarget>
+        <span class="text-Success">Moi avant</span>
+      </p>
+      
     </div>
     <transition
       enter-active-class="transition ease-out delay-300 duration-200"
@@ -181,8 +181,8 @@
             <span>construction</span> pour le moment. Vous pouvez le découvrir
             ici :
             <a href="https://9ca2847f.adp.pages.dev/home" target="_blank"
-              >Site vitrine de l'entreprise ADP."</a
-            >
+              >Site vitrine de l'entreprise ADP</a
+            >.
           </p>
           <div class="flex">
             <a
