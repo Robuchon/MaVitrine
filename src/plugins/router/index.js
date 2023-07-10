@@ -48,10 +48,12 @@ const router = createRouter({
 });
 
 router.beforeEach(async (to, from) => {
-    if (to.matched.length === 0) {
-      //ici si pas de matched page
-      return { name: "NotFound" };
-    }
+  window.scrollTo(0, 0);
+
+  if (to.matched.length === 0) {
+    //ici si pas de matched page
+    return { name: "NotFound" };
+  }
 });
 
 export default router;
