@@ -3,16 +3,15 @@
     <h1>Input</h1>
     <h3>Ici la liste des Champs de saisi</h3>
     <div class="flex flex-col items-center">
-      <p class="mx-auto grid w-48 grid-cols-3">
-        <span class="text-Error">Action</span>
-        <span class="text-center font-black text-white">/</span>
+      <p class="mx-auto flex w-48 items-center gap-4">
+        <span class="text-Error">Action</span
+        ><InputsTarget
+          :data="explication"
+          :error="''"
+          v-model="explication.value"
+        ></InputsTarget>
         <span class="text-Success">Explication</span>
       </p>
-      <InputsTarget
-        :data="explication"
-        :error="''"
-        v-model="explication.value"
-      ></InputsTarget>
     </div>
     <transition
       enter-active-class="transition ease-out delay-300 duration-200"
