@@ -125,12 +125,21 @@
       </div>
       <div v-else>
         <div class="grid grid-cols-1 items-center md:grid-cols-2">
-          <InputsTarget
-            class="w-80"
-            :data="selectInput"
-            :error="''"
-            v-model="testData.target"
-          ></InputsTarget>
+          <div>
+            <section>
+              <img
+                class="fleche -ml-9 w-14 rotate-45 grayscale hue-rotate-180 sepia"
+                src="/img/input/fleche.png"
+                alt="fleche"
+              />
+            </section>
+            <InputsTarget
+              class="w-80"
+              :data="selectInput"
+              :error="''"
+              v-model="testData.target"
+            ></InputsTarget>
+          </div>
           <InputsTarget
             v-if="testData.target !== ''"
             class="w-40"
@@ -260,4 +269,29 @@ const testData = ref({
 });
 </script>
 
-<style scoped></style>
+<style scoped>
+@keyframes down {
+  0% {
+    position: relative;
+    top: 0px;
+    right: 30px;
+    opacity: 0;
+  }
+  50% {
+    position: relative;
+    top: 15px;
+    right: 15px;
+    opacity: 0.5;
+  }
+  100% {
+    position: relative;
+    top: 30px;
+    right: 0px;
+    opacity: 1;
+  }
+}
+
+.fleche {
+  animation: down 0.75s infinite linear alternate;
+}
+</style>
