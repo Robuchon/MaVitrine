@@ -22,30 +22,28 @@
                 (itemSelect = indexBis)
             "
             @mouseleave="openSection = false"
-            class="cursor-pointer"
+            class="transform cursor-pointer duration-200 hover:z-20 hover:scale-125"
           >
             <div
-              class="flex h-full w-full transform flex-col justify-between rounded-2xl bg-Success/10 p-2 duration-200 hover:z-20 hover:scale-125 hover:bg-Accent/80 max-h-56"
+              class="flex h-full max-h-56 w-full transform flex-col justify-between rounded-2xl bg-Success/10 p-2 duration-200 hover:bg-Accent/80"
               @click="
                 (open = true), (sectionSelect = index), (itemSelect = indexBis)
               "
             >
-              <div
-                class="relative z-0 mx-auto my-auto flex h-[60%] w-[90%]"
-              >
+              <div class="relative z-0 mx-auto my-auto flex h-[60%] w-[90%]">
                 <SvgTarget
                   v-if="item?.logoType === 'svg'"
                   :target="item.logo"
-                  class="z-10 w-9/10 flex items-center justify-center"
+                  class="w-9/10 z-10 flex items-center justify-center"
                 ></SvgTarget>
                 <img
                   v-else
                   :src="item.logo"
                   alt=""
-                  class="z-10 bg-contain mx-auto rounded-xl"
+                  class="z-10 mx-auto rounded-xl bg-contain"
                 />
                 <div
-                  class="absolute top-0 bottom-0 right-0 left-0 -z-10 m-auto bg-white/30 blur-xl"
+                  class="absolute bottom-0 left-0 right-0 top-0 -z-10 m-auto bg-white/30 blur-xl"
                 ></div>
               </div>
               <p class="text-justify">{{ item.desc }}</p>
@@ -87,7 +85,7 @@
                 class="relative h-[90%] w-[90%] transform overflow-hidden rounded-lg bg-gray-800 px-4 pb-4 pt-5 text-left shadow-xl transition-all sm:my-8 sm:w-[85%] sm:max-w-7xl sm:p-6"
               >
                 <div
-                  class="relative float-left mt-6 mr-6 aspect-[16/9] max-h-48"
+                  class="relative float-left mr-6 mt-6 aspect-[16/9] max-h-48"
                 >
                   <div class="flex h-full max-h-48">
                     <SvgTarget
@@ -96,16 +94,16 @@
                         'svg'
                       "
                       :target="Txt.fr[sectionSelect].contents[itemSelect].logo"
-                      class="z-10 my-auto mx-auto flex h-full max-h-48 w-max max-w-[200px] items-center justify-center"
+                      class="z-10 mx-auto my-auto flex h-full max-h-48 w-max max-w-[200px] items-center justify-center"
                     ></SvgTarget>
                     <img
                       v-else
                       :src="Txt.fr[sectionSelect].contents[itemSelect].logo"
                       alt=""
-                      class="z-10 my-auto mx-auto flex h-full max-h-48 w-max max-w-[200px] rounded-xl"
+                      class="z-10 mx-auto my-auto flex h-full max-h-48 w-max max-w-[200px] rounded-xl"
                     />
                     <div
-                      class="absolute top-5 bottom-5 right-5 left-5 -z-10 m-auto bg-white/30 blur-xl"
+                      class="absolute bottom-5 left-5 right-5 top-5 -z-10 m-auto bg-white/30 blur-xl"
                     ></div>
                   </div>
                 </div>
