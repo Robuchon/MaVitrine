@@ -24,41 +24,8 @@
             @mouseleave="openSection = false"
             class="cursor-pointer"
           >
-            <!-- <div
-              class="absolute z-10 w-[200%] rounded-2xl bg-Accent p-5 text-black shadow-lg shadow-Secondary/30 md:transform md:transition-all md:duration-300 pointer-events-none xl:-translate-x-[25%] md:-translate-y-[10%] border-Primary/20 border-4"
-              :class="
-                (indexBis % 3 === 0
-                  ? 'md:-translate-x-[0%]'
-                  : (indexBis + 1) % 3 === 0
-                  ? 'md:-translate-x-[50%]'
-                  : 'md:-translate-x-[25%]') , openSection && sectionSelect === index && itemSelect === indexBis ? 'opacity-100' : 'opacity-0'
-              "
-              @click="
-                (open = true), (sectionSelect = index), (itemSelect = indexBis)
-              "
-            >
-              <div class="relative float-left mt-6 mr-6 aspect-[16/9] max-h-48">
-                <div class="flex h-full max-h-48">
-                  <SvgTarget
-                    v-if="item?.logoType === 'svg'"
-                    :target="item.logo"
-                    class=" my-auto mx-auto flex h-full max-h-48 w-max max-w-[200px] items-center justify-center"
-                  ></SvgTarget>
-                  <img
-                    v-else
-                    :src="item.logo"
-                    alt=""
-                    class=" my-auto mx-auto flex h-full max-h-48 w-max max-w-[200px] rounded-xl"
-                  />
-                  <div
-                    class="absolute top-5 bottom-5 right-5 left-5 -z-10 m-auto bg-white/30 blur-xl"
-                  ></div>
-                </div>
-              </div>
-              <p v-html="item.txt" class=""></p>
-            </div> -->
             <div
-              class="flex h-full w-full transform flex-col justify-between rounded-2xl bg-Success/10 p-2 duration-200 hover:z-10 hover:scale-125 hover:bg-Accent/80 max-h-56"
+              class="flex h-full w-full transform flex-col justify-between rounded-2xl bg-Success/10 p-2 duration-200 hover:z-20 hover:scale-125 hover:bg-Accent/80 max-h-56"
               @click="
                 (open = true), (sectionSelect = index), (itemSelect = indexBis)
               "
