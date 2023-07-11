@@ -22,10 +22,10 @@
                 (itemSelect = indexBis)
             "
             @mouseleave="openSection = false"
-            class="transform cursor-pointer duration-200 hover:z-20 hover:scale-125"
+            class="transform cursor-pointer md:duration-200 md:hover:z-20 md:hover:scale-125"
           >
             <div
-              class="flex h-full max-h-56 w-full transform flex-col justify-between rounded-2xl bg-Success/10 p-2 duration-200 hover:bg-Accent/80"
+              class="flex h-full max-h-56 w-full md:transform flex-col justify-between rounded-2xl bg-Success/10 p-2 md:duration-200 md:hover:bg-Accent/80"
               @click="
                 (open = true), (sectionSelect = index), (itemSelect = indexBis)
               "
