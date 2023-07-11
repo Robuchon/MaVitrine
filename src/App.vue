@@ -168,7 +168,7 @@
     </div>
 
     <div
-      class="sticky top-0 z-10"
+      class="sticky top-0 z-20"
       :class="[
         isScrolled ? 'shadow-Accent' : '',
         scrollPosition === 0 || scrollPosition < 50
