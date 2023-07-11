@@ -1,7 +1,7 @@
 <template>
   <div class="relative flex min-h-screen flex-col">
     <div
-      class="absolute left-0 right-0 top-0 bottom-0 w-full overflow-hidden lg:w-full"
+      class="absolute left-0 right-0 top-0 bottom-0 w-full overflow-hidden lg:w-full z-10"
     >
       <svg
         class="absolute inset-0 h-full w-full stroke-Neutral/40 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
