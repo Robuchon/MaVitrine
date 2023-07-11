@@ -1,7 +1,7 @@
 <template>
   <div class="relative flex min-h-screen flex-col">
     <div
-      class="absolute left-0 right-0 top-0 bottom-0 w-full overflow-hidden lg:w-full cursor-not-allowed -z-40"
+      class="absolute left-0 right-0 top-0 bottom-0 w-full overflow-hidden lg:w-full cursor-not-allowed"
     >
       <svg
         class="absolute inset-0 h-full w-full stroke-Neutral/40 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
@@ -168,7 +168,7 @@
     </div>
 
     <div
-      class="sticky top-0 z-20"
+      class="sticky top-0 z-10"
       :class="[
         isScrolled ? 'shadow-Accent' : '',
         scrollPosition === 0 || scrollPosition < 50
@@ -190,7 +190,7 @@
         :navigation="navigation"
       ></NavbarTarget>
     </div>
-    <div class="overflow-x-hidden">
+    <div class="overflow-x-hidden z-10">
       <transition
       enter-active-class="transition ease-out delay-150 duration-200"
       enter-from-class="opacity-0"
@@ -198,7 +198,7 @@
       leave-active-class="transition ease-in duration-150"
       leave-from-class="opacity-100"
       leave-to-class="opacity-0"
-      ><RouterView class="z-10 mx-auto px-4"></RouterView
+      ><RouterView class="mx-auto px-4"></RouterView
     ></transition>
     </div>
     
