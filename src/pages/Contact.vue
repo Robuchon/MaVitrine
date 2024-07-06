@@ -23,7 +23,7 @@
                 <BuildingOffice2Icon class="h-7 w-6" aria-hidden="true" />
               </dt>
               <dd>
-                Rn 6085 Residence les Cyprine<br />06460 St Vallier de Thiey
+                157 Rue Louis Marie Baudouin<br />85250 Chavagnes en Paillers
               </dd>
             </div>
             <div class="flex gap-x-4">

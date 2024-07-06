@@ -5,8 +5,8 @@
       <div>
         <h4 class="max-w-md">Je me presente:</h4>
         <h5 class="mt-2">Mon nom est Robuchon Hugues.</h5>
-        <h5 class="mt-2">Je suis un Jeune Développeur web FullStack JS.</h5>
-        <h5 class="mt-2">J'ai 37 ans.</h5>
+        <h5 class="mt-2">Je suis un Développeur web FullStack.</h5>
+        <h5 class="mt-2">J'ai 38 ans.</h5>
       </div>
       <div class="flex">
         <div class="image-container mx-auto overflow-hidden rounded-xl">
@@ -20,13 +20,13 @@
     </div>
     <div class="flex flex-col items-center">
       <p class="mx-auto flex items-center gap-4">
-        <span class="text-Error">Developement</span>
+        <span class="text-Error">Mes travaux</span>
         <InputsTarget
         :data="choix"
         :error="''"
         v-model="choix.value"
       ></InputsTarget>
-        <span class="text-Success">Moi avant</span>
+        <span class="text-Success">Mon parcours</span>
       </p>
       
     </div>
@@ -141,38 +141,19 @@
             <span>quitté mon emploi début 2022</span> pour devenir
             <span>freelance</span>. Depuis lors, j'ai travaillé sur différents
             projets, notamment la création d'un site vitrine et d'une
-            application web pour
-            <a href="https://reave.gg" target="_blank">REAVE (reave.gg)</a> et
+            application web pour REAVE et
             d'autres projets privés.
           </p>
-          <div class="flex">
-            <a
-              href="https://reave.gg"
-              target="_blank"
-              class="mx-auto w-1/2 sm:duration-300 sm:hover:w-full"
-            >
-              <img src="/img/home/reave.png" alt="" class="h-full" />
-            </a>
-          </div>
           <p>
             J'ai également eu l'occasion de mettre à l'<span
               >épreuve mes compétences</span
             >
             sur des projets <span>semi-personnels</span>, tels que le site d'art
             de ma femme, réalisé en un <span>minimum de temps</span> sur 1 jour
-            environs 10 heures:
-            <a href="https://ladyacadia.fr/home" target="_blank"
-              >Site d'art de ma femme.</a
-            >
+            environs 10 heures. Aujourd'hui hors ligne car il etait hebergé completement de chez moi je vais le remettre en ligne avec Cloodflare d'ici quelques semaines
           </p>
           <div class="flex">
-            <a
-              href="https://ladyacadia.fr/home"
-              target="_blank"
-              class="mx-auto w-1/2 sm:duration-300 sm:hover:w-full"
-            >
-              <img src="/img/home/maFemme.png" alt="" class="h-full" />
-            </a>
+              <img src="/img/home/maFemme.png" alt="" class="h-full mx-auto w-1/2 sm:duration-300 sm:hover:w-full" />
           </div>
 
           <p>
