@@ -14,7 +14,7 @@
           <div class="blur-overlay-r"></div>
           <div class="blur-overlay-b"></div>
           <div class="blur-overlay-l"></div>
-          <img src="/img/photoprofil.jpg" alt="" class="h-56" />
+          <img src="/img/photoprofil.jpeg" alt="" class="h-56" />
         </div>
       </div>
     </div>
@@ -203,8 +203,8 @@ const choix = ref({
   position: absolute;
   background: linear-gradient(
     to top,
-    rgb(76, 29, 149, 0),
-    rgba(77, 29, 149, 0.629)
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.80)
   );
   height: 20px;
   top: 0;
@@ -216,8 +216,8 @@ const choix = ref({
   position: absolute;
   background: linear-gradient(
     to right,
-    rgb(76, 29, 149, 0),
-    rgba(77, 29, 149, 0.629)
+    rgb(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.80)
   );
   width: 10px;
   top: 0;
@@ -229,8 +229,8 @@ const choix = ref({
   position: absolute;
   background: linear-gradient(
     to bottom,
-    rgb(76, 29, 149, 0),
-    rgba(77, 29, 149, 0.629)
+    rgb(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.80)
   );
   height: 20px;
   bottom: 0;
@@ -242,8 +242,8 @@ const choix = ref({
   position: absolute;
   background: linear-gradient(
     to left,
-    rgb(76, 29, 149, 0),
-    rgba(77, 29, 149, 0.629)
+    rgb(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.80)
   );
   width: 10px;
   top: 0;

@@ -58,7 +58,7 @@
         aria-hidden="true"
       >
         <div
-          class="aspect-[1155/678] w-[72.1875rem] bg-gradient-to-r from-[#cdbc00] via-[#5c00a3] to-[#1508cc] opacity-30"
+          class="aspect-[1155/678] w-[72.1875rem] bg-gradient-to-r from-[#2a1414] via-[#000000] to-[#070439] opacity-60"
           style="
             clip-path: polygon(
               74.1% 56.1%,
@@ -86,7 +86,7 @@
         aria-hidden="true"
       >
         <div
-          class="from-20% via-50% to-20% aspect-[1155/678] w-[72.1875rem] bg-gradient-to-r from-[#0b04c2] via-[#b300d7] to-[#a71567] opacity-30"
+          class="from-20% via-50% to-20% aspect-[1155/678] w-[72.1875rem] bg-gradient-to-r from-[#121225] via-[#19061d] to-[#2c030d] opacity-60"
           style="
             clip-path: polygon(
               94.1% 6.1%,
@@ -110,11 +110,11 @@
         />
       </div>
       <div
-        class="absolute left-[10%] top-[15%] -rotate-90 transform-gpu blur-3xl"
+        class="absolute -left-[5%] top-[20%] -rotate-90 transform-gpu blur-3xl"
         aria-hidden="true"
       >
         <div
-          class="from-40% to-40% aspect-[1155/678] w-[72.1875rem] bg-gradient-to-r from-[#b30e71] via-[#b216d9] to-[#7f08ae] opacity-30"
+          class="from-40% to-40% aspect-[1155/678] w-[72.1875rem] bg-gradient-to-r from-[#1e0e18] via-[#140418] to-[#1c0226] opacity-60"
           style="
             clip-path: polygon(
               74.1% 56.1%,
@@ -138,11 +138,39 @@
         />
       </div>
       <div
-        class="absolute left-[10%] bottom-[15%] rotate-90 transform-gpu blur-3xl"
+        class="absolute left-[0%] bottom-[15%] rotate-90 transform-gpu blur-3xl"
         aria-hidden="true"
       >
         <div
-          class="aspect-[1155/678] w-[72.1875rem] bg-gradient-to-r from-[#f70000] via-[#ff0beb] to-[#e83030] opacity-30"
+          class="aspect-[1155/678] w-[72.1875rem] bg-gradient-to-r from-[#3c1f1f] via-[#280425] to-[#1b0202] opacity-60"
+          style="
+            clip-path: polygon(
+              74.1% 56.1%,
+              100% 38.6%,
+              97.5% 73.3%,
+              85.5% 100%,
+              80.7% 98.2%,
+              72.5% 67.7%,
+              60.2% 37.8%,
+              52.4% 32.2%,
+              47.5% 41.9%,
+              45.2% 65.8%,
+              27.5% 23.5%,
+              0.1% 35.4%,
+              17.9% 0.1%,
+              27.6% 23.5%,
+              76.1% 2.6%,
+              74.1% 56.1%
+            );
+          "
+        />
+      </div>
+      <div
+        class="absolute left-[25%] top-[25%] rotate-45 transform-gpu blur-3xl"
+        aria-hidden="true"
+      >
+        <div
+          class="aspect-[1155/678] w-[72.1875rem] bg-gradient-to-r from-[#3c1f1f] via-[#280425] to-[#1b0202] opacity-60"
           style="
             clip-path: polygon(
               74.1% 56.1%,
@@ -228,7 +256,7 @@ const navigation = ref([
 
 const isScrolled = ref(false);
 const scrollPosition = ref(0);
-const classOpacity = ref({ "background-color": "rgb(76 29 149 / 0)" });
+const classOpacity = ref({ "background-color": "rgb(28 28 28 / 0)" });
 
 const selectInput = ref({
   label: "changer de navbar",
@@ -254,11 +282,11 @@ watch(
     if (scrollPosition.value < 100) {
       classOpacity.value = {
         "background-color":
-          "rgb(76 29 149 / " + scrollPosition.value / 100 + ")",
+          "rgb(28 28 28 / " + scrollPosition.value / 100 + ")",
       };
     } else if (scrollPosition.value > 100) {
       classOpacity.value = {
-        "background-color": "rgb(76 29 149 / 1)",
+        "background-color": "rgb(28 28 28 / 1)",
       };
     }
   },

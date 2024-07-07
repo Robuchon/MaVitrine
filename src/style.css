@@ -36,12 +36,12 @@
   }
 
   body::-webkit-scrollbar-track {
-    background: rgb(43, 13, 87); /* color of the tracking area */
+    background: #1C1C1C; /* color of the tracking area */
   }
 
   body::-webkit-scrollbar-thumb {
-    background-color: #fff200; /* color of the scroll thumb */
+    background-color: #a3a3a3; /* color of the scroll thumb */
     border-radius: 20px; /* roundness of the scroll thumb */
-    border: 3px solid #913e94;
+    border: 3px solid #595959;
   }
 }

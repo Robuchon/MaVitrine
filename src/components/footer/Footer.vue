@@ -18,7 +18,7 @@
       </div>
       <div class="mt-8 md:order-1 md:mt-0">
         <p class="text-center text-xs leading-5 text-Primary">
-          &copy; 2021-2023 Dev Prog Création. Tout droit reservé.
+          &copy; 2021-2024 Dev Prog Création. Tout droit reservé.
         </p>
       </div>
     </div>
