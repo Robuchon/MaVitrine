@@ -3,14 +3,15 @@
     <h1>Input</h1>
     <h3>Ici la liste des Champs de saisi</h3>
     <div class="flex flex-col items-center">
-      <p class="mx-auto flex w-48 items-center gap-4">
-        <span class="text-Error">Action</span
+      <p class="mx-auto flex items-center gap-4">
+        <span class="text-Error w-1/3">Action</span
         ><InputsTarget
           :data="explication"
           :error="''"
           v-model="explication.value"
+          class="w-1/3"
         ></InputsTarget>
-        <span class="text-Success">Explication</span>
+        <span class="text-Success w-1/3">Explication</span>
       </p>
     </div>
     <transition
@@ -109,7 +110,7 @@
             <img
               src="/img/input/exempleUse.png"
               alt=""
-              class="z-10 float-left m-auto mr-10 w-56 sm:duration-300 sm:hover:z-20 sm:hover:-translate-y-[80%] sm:hover:translate-x-[50%] sm:hover:scale-[200%]"
+              class="z-10 float-left m-auto mr-10 w-56 sm:duration-300 sm:hover:z-20 sm:hover:-translate-y-[50%] sm:hover:translate-x-[50%] sm:hover:scale-[200%]"
             />
             <p class="mt-10">
               Enfin, a gauche, nous avons l'importation et l'utilisation du

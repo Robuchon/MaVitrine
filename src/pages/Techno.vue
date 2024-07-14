@@ -25,7 +25,7 @@
             class="transform cursor-pointer md:duration-200 md:hover:z-20 md:hover:scale-125"
           >
             <div
-              class="flex h-full max-h-56 w-full md:transform flex-col justify-between rounded-2xl bg-Success/10 p-2 md:duration-200 md:hover:bg-Accent/80"
+              class="flex h-full max-h-56 w-full md:transform flex-col justify-between rounded-2xl bg-Accent/20 p-2 md:duration-200 md:hover:bg-Accent/90"
               @click="
                 (open = true), (sectionSelect = index), (itemSelect = indexBis)
               "
@@ -64,7 +64,7 @@
           leave-to="opacity-0"
         >
           <div
-            class="fixed inset-0 bg-Accent/50 bg-opacity-50 transition-opacity"
+            class="fixed inset-0 bg-Accent/90 bg-opacity-50 transition-opacity"
           />
         </TransitionChild>
 
@@ -82,7 +82,7 @@
               leave-to="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
             >
               <DialogPanel
-                class="relative h-[90%] w-[90%] transform overflow-hidden rounded-lg bg-gray-800 px-4 pb-4 pt-5 text-left shadow-xl transition-all sm:my-8 sm:w-[85%] sm:max-w-7xl sm:p-6"
+                class="relative h-[90%] w-[90%] transform overflow-hidden rounded-lg bg-Accent px-4 pb-4 pt-5 text-left shadow-xl transition-all sm:my-8 sm:w-[85%] sm:max-w-7xl sm:p-6"
               >
                 <div
                   class="relative float-left mr-6 mt-6 aspect-[16/9] max-h-48"

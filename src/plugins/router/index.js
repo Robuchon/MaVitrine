@@ -31,6 +31,11 @@ let routes = [
     component: () => import("@pages/Button.vue"),
   },
   {
+    path: "/heapdumps",
+    name: "Heapdumps",
+    component: () => import("@pages/Heapdumps.vue"),
+  },
+  {
     path: "/waiting",
     name: "Waiting",
     component: () => import("@pages/Waiting.vue"),

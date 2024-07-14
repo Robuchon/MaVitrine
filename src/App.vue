@@ -249,6 +249,7 @@ const navigation = ref([
     dataNav: [
       { name: "Input", goto: "/input" },
       { name: "Button", goto: "/button" },
+      { name: "Heapdumps", goto: "/heapdumps" },
     ],
   },
   { name: "Contact", goto: "/Contact", logo: "ChatBubbleBottomCenterTextIcon" },

@@ -3,7 +3,7 @@ const en = {};
 const fr = [
   {
     id: "frontend",
-    title: "FrontEnd",
+    title: "Développement Frontend :",
     contents: [
       {
         title: "Vue",
@@ -147,7 +147,7 @@ const fr = [
   },
   {
     id: "backend",
-    title: "BackEnd",
+    title: "Développement Backend :",
     contents: [
       {
         title: "NodeJS",
@@ -235,7 +235,7 @@ const fr = [
   },
   {
     id: "bdStockage",
-    title: "Base de donnée et stockage",
+    title: "Base de donnée, stockage et Traitement de Données",
     contents: [
       {
         title: "MongoDB",
@@ -302,25 +302,21 @@ const fr = [
       },
     ],
   },
+  {
+    id: "devOps",
+    title: "Outils et Technologies DevOps",
+    content: []
+  },
+  {
+    id: "tests",
+    title: "Outils et Techniques de Tests",
+    content: []
+  },
+  {
+    id: "autres",
+    title: "Autres outils et Techniques",
+    content: []
+  }
 ];
 
 export default { en, fr };
-
-/* 
-{
-  title: "",
-        desc: "ici un petit test",
-  txt: ``,
-},
-
-frontEnd: {
-    title: "FrontEnd",
-    contents: [
-      {
-        title: "",
-        desc: "ici un petit test",
-        txt: ``,
-      },
-    ]
-},
-*/
