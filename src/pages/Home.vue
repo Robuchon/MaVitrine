@@ -22,13 +22,12 @@
       <p class="mx-auto flex items-center gap-4">
         <span class="text-Error">Mes travaux</span>
         <InputsTarget
-        :data="choix"
-        :error="''"
-        v-model="choix.value"
-      ></InputsTarget>
+          :data="choix"
+          :error="''"
+          v-model="choix.value"
+        ></InputsTarget>
         <span class="text-Success">Mon parcours</span>
       </p>
-      
     </div>
     <transition
       enter-active-class="transition ease-out delay-300 duration-200"
@@ -141,8 +140,7 @@
             <span>quitté mon emploi début 2022</span> pour devenir
             <span>freelance</span>. Depuis lors, j'ai travaillé sur différents
             projets, notamment la création d'un site vitrine et d'une
-            application web pour REAVE et
-            d'autres projets privés.
+            application web pour REAVE et d'autres projets privés.
           </p>
           <p>
             J'ai également eu l'occasion de mettre à l'<span
@@ -150,28 +148,50 @@
             >
             sur des projets <span>semi-personnels</span>, tels que le site d'art
             de ma femme, réalisé en un <span>minimum de temps</span> sur 1 jour
-            environs 10 heures. Aujourd'hui hors ligne car il etait hebergé completement de chez moi je vais le remettre en ligne avec Cloodflare d'ici quelques semaines
           </p>
+          <p>
+            environs 10 heures. Aujourd'hui hors ligne car il etait hebergé
+            completement de chez moi je vais le remettre en ligne avec
+            Cloodflare d'ici quelques semaines.
+          </p>
+          <a href="https://ladyacadia.fr/home" target="_blank">Lady Acadia</a>
           <div class="flex">
-              <img src="/img/home/maFemme.png" alt="" class="h-full mx-auto w-1/2 sm:duration-300 sm:hover:w-full" />
+            <a
+              href="https://ladyacadia.fr/home"
+              target="_blank"
+              class="mx-auto w-1/2 sm:duration-300 sm:hover:w-full"
+            >
+              <img src="/img/home/maFemme.png" alt="" class="w-full"
+            /></a>
           </div>
-
           <p>
             Et récemment, j'ai conçu un site
             <span>vitrine</span> pour l'<span>entreprise ADP</span> en
-            <span>construction</span> pour le moment. Vous pouvez le découvrir
+            <span>construction</span>, pour le moment le contenu n'ai pas réel ( j'attend les photo et texte). Vous pouvez le découvrir
             ici :
-            <a href="https://9ca2847f.adp.pages.dev/home" target="_blank"
+            <a href="https://adp.pages.dev/home" target="_blank"
               >Site vitrine de l'entreprise ADP</a
             >.
           </p>
           <div class="flex">
             <a
-              href="https://9ca2847f.adp.pages.dev/home"
+              href="https://adp.pages.dev/home"
               target="_blank"
               class="mx-auto w-1/2 sm:duration-300 sm:hover:w-full"
             >
               <img src="/img/home/beauPere.png" alt="" class="h-full" />
+            </a>
+          </div>
+          <p>et encore plus recament j'ai fini un site pour <span>Azur Drone</span> je n'ai pas encore le nom de domaine. Des problemes avec des nom d'entreprise trop similaire mais vous pouvez le visite ici: <a href="https://azur-drone.pages.dev/accueil" target="_blank"
+              >Azur Drone</a
+            ></p>
+            <div class="flex">
+            <a
+              href="https://azur-drone.pages.dev/accueil"
+              target="_blank"
+              class="mx-auto w-1/2 sm:duration-300 sm:hover:w-full"
+            >
+              <img src="/img/home/azurdrone.png" alt="" class="h-full" />
             </a>
           </div>
         </div></div
@@ -201,11 +221,7 @@ const choix = ref({
 
 .blur-overlay-t {
   position: absolute;
-  background: linear-gradient(
-    to top,
-    rgba(0, 0, 0, 0),
-    rgba(0, 0, 0, 0.80)
-  );
+  background: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
   height: 20px;
   top: 0;
   right: 0; /* Ajustez la valeur de flou selon vos besoins */
@@ -214,11 +230,7 @@ const choix = ref({
 }
 .blur-overlay-r {
   position: absolute;
-  background: linear-gradient(
-    to right,
-    rgb(0, 0, 0, 0),
-    rgba(0, 0, 0, 0.80)
-  );
+  background: linear-gradient(to right, rgb(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
   width: 10px;
   top: 0;
   right: 0;
@@ -227,11 +239,7 @@ const choix = ref({
 }
 .blur-overlay-b {
   position: absolute;
-  background: linear-gradient(
-    to bottom,
-    rgb(0, 0, 0, 0),
-    rgba(0, 0, 0, 0.80)
-  );
+  background: linear-gradient(to bottom, rgb(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
   height: 20px;
   bottom: 0;
   right: 0;
@@ -240,11 +248,7 @@ const choix = ref({
 }
 .blur-overlay-l {
   position: absolute;
-  background: linear-gradient(
-    to left,
-    rgb(0, 0, 0, 0),
-    rgba(0, 0, 0, 0.80)
-  );
+  background: linear-gradient(to left, rgb(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
   width: 10px;
   top: 0;
   bottom: 0;
