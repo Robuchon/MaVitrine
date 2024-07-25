@@ -209,7 +209,7 @@ const choix = ref({
   name: "switch",
   type: "switch",
   target: "InputSwitch",
-  value: true,
+  value: false,
 });
 </script>
 
